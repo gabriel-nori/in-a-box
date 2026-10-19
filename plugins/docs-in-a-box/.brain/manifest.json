@@ -1,0 +1,30 @@
+{
+  "plugin": "docs-in-a-box",
+  "skills": [
+    {
+      "name": "changelog-keeper",
+      "file": "skills/changelog-keeper/SKILL.md"
+    },
+    {
+      "name": "documenter",
+      "file": "skills/documenter/SKILL.md"
+    }
+  ],
+  "processes": [],
+  "rules": [
+    {
+      "scenario": "changelog, release notes, what changed, keep a changelog, unreleased section",
+      "title": "Changelog upkeep",
+      "non_negotiable": false,
+      "id": "changelog-upkeep",
+      "file": "rules/changelog-upkeep.md"
+    },
+    {
+      "scenario": "write the docs, tutorial vs how-to, reference vs explanation, where should this go in the docs",
+      "title": "Documentation by user need",
+      "non_negotiable": false,
+      "id": "documentation-by-need",
+      "file": "rules/documentation-by-need.md"
+    }
+  ]
+}

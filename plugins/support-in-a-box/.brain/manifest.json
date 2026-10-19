@@ -1,0 +1,19 @@
+{
+  "plugin": "support-in-a-box",
+  "skills": [
+    {
+      "name": "support-agent",
+      "file": "skills/support-agent/SKILL.md"
+    }
+  ],
+  "processes": [],
+  "rules": [
+    {
+      "scenario": "support ticket, customer incident, known error, workaround, problem management, root cause of recurring tickets",
+      "title": "Incident and problem handling in support",
+      "non_negotiable": false,
+      "id": "incident-vs-problem-handling",
+      "file": "rules/incident-vs-problem-handling.md"
+    }
+  ]
+}

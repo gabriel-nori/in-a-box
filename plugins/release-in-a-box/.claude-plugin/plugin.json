@@ -1,0 +1,13 @@
+{
+  "name": "release-in-a-box",
+  "version": "0.1.0",
+  "description": "release role.",
+  "author": {
+    "name": "Gabriel Almilhatti"
+  },
+  "keywords": [
+    "in-a-box",
+    "role",
+    "release"
+  ]
+}

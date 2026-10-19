@@ -1,0 +1,55 @@
+{
+  "plugin": "finops-in-a-box",
+  "skills": [
+    {
+      "name": "budget-planner",
+      "file": "skills/budget-planner/SKILL.md"
+    },
+    {
+      "name": "cost-estimator",
+      "file": "skills/cost-estimator/SKILL.md"
+    },
+    {
+      "name": "cost-monitor",
+      "file": "skills/cost-monitor/SKILL.md"
+    }
+  ],
+  "processes": [],
+  "rules": [
+    {
+      "scenario": "cost estimate, how much will it cost, pricing calculator, cloud bill forecast, TCO, compare provider cost, quote a price",
+      "title": "A cost estimate shows its sources, dates and assumptions, and gives a range",
+      "non_negotiable": false,
+      "id": "estimate-with-sources",
+      "file": "rules/estimate-with-sources.md"
+    },
+    {
+      "scenario": "set a budget, budget alert, cost alert, billing alert, cost threshold, forecast alert, anomaly alert",
+      "title": "Every budget has an owner, forecast thresholds and a defined response",
+      "non_negotiable": false,
+      "id": "budgets-need-owners",
+      "file": "rules/budgets-need-owners.md"
+    },
+    {
+      "scenario": "cost allocation, tagging, labels, cost center, who owns this spend, account structure, showback, chargeback",
+      "title": "Define cost allocation (tags, labels, accounts) before resources exist; untagged spend is a finding",
+      "non_negotiable": false,
+      "id": "tag-before-you-spend",
+      "file": "rules/tag-before-you-spend.md"
+    },
+    {
+      "scenario": "why did the bill go up, cost anomaly, cost variance, are we on budget, cost report, find savings, cost optimisation",
+      "title": "Read cost changes by driver: price, usage and commitment, with provisional days marked",
+      "non_negotiable": false,
+      "id": "read-costs-by-driver",
+      "file": "rules/read-costs-by-driver.md"
+    },
+    {
+      "scenario": "finops, cloud cost accountability, cost aware engineering, who owns cloud spend, practitioner role",
+      "title": "FinOps accountability",
+      "non_negotiable": false,
+      "id": "finops-accountability",
+      "file": "rules/finops-accountability.md"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "orchestrator-in-a-box",
+  "version": "0.1.0",
+  "description": "Connects role plugins into user-defined flows on demand.",
+  "author": { "name": "Gabriel Almilhatti" },
+  "keywords": ["in-a-box", "orchestrator", "flow"]
+}

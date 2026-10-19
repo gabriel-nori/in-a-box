@@ -1,0 +1,75 @@
+{
+  "plugin": "dev-in-a-box",
+  "skills": [
+    {
+      "name": "code-reviewer",
+      "file": "skills/code-reviewer/SKILL.md"
+    },
+    {
+      "name": "code-reviewer-android",
+      "file": "skills/code-reviewer-android/SKILL.md"
+    },
+    {
+      "name": "code-reviewer-iac",
+      "file": "skills/code-reviewer-iac/SKILL.md"
+    },
+    {
+      "name": "code-reviewer-java",
+      "file": "skills/code-reviewer-java/SKILL.md"
+    },
+    {
+      "name": "code-reviewer-python",
+      "file": "skills/code-reviewer-python/SKILL.md"
+    },
+    {
+      "name": "code-reviewer-react",
+      "file": "skills/code-reviewer-react/SKILL.md"
+    },
+    {
+      "name": "code-reviewer-sql",
+      "file": "skills/code-reviewer-sql/SKILL.md"
+    },
+    {
+      "name": "developer",
+      "file": "skills/developer/SKILL.md"
+    },
+    {
+      "name": "developer-android",
+      "file": "skills/developer-android/SKILL.md"
+    },
+    {
+      "name": "developer-java",
+      "file": "skills/developer-java/SKILL.md"
+    },
+    {
+      "name": "developer-python",
+      "file": "skills/developer-python/SKILL.md"
+    },
+    {
+      "name": "developer-react",
+      "file": "skills/developer-react/SKILL.md"
+    },
+    {
+      "name": "developer-sql",
+      "file": "skills/developer-sql/SKILL.md"
+    },
+    {
+      "name": "spec-analyst",
+      "file": "skills/spec-analyst/SKILL.md"
+    },
+    {
+      "name": "tech-lead",
+      "file": "skills/tech-lead/SKILL.md"
+    }
+  ],
+  "processes": [],
+  "rules": [
+    {
+      "scenario": "code review, review this PR, is this ready to merge, approve or request changes, reviewer author disagreement",
+      "title": "Code review",
+      "non_negotiable": false,
+      "id": "code-review",
+      "file": "rules/code-review.md"
+    }
+  ]
+}

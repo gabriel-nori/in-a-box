@@ -1,0 +1,19 @@
+{
+  "plugin": "orchestrator-in-a-box",
+  "skills": [
+    {
+      "name": "compose-flow",
+      "file": "skills/compose-flow/SKILL.md"
+    },
+    {
+      "name": "process-to-command",
+      "file": "skills/process-to-command/SKILL.md"
+    },
+    {
+      "name": "run-flow",
+      "file": "skills/run-flow/SKILL.md"
+    }
+  ],
+  "processes": [],
+  "rules": []
+}

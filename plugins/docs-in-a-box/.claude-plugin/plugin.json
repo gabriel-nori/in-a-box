@@ -1,0 +1,14 @@
+{
+  "name": "docs-in-a-box",
+  "version": "0.1.0",
+  "description": "Documentation role: documentation and changelog for an approved delivery.",
+  "author": {
+    "name": "Gabriel Almilhatti"
+  },
+  "keywords": [
+    "in-a-box",
+    "role",
+    "docs",
+    "changelog"
+  ]
+}

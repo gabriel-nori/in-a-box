@@ -1,0 +1,19 @@
+{
+  "plugin": "lawyer-in-a-box",
+  "skills": [
+    {
+      "name": "legal-counsel",
+      "file": "skills/legal-counsel/SKILL.md"
+    }
+  ],
+  "processes": [],
+  "rules": [
+    {
+      "scenario": "review this contract, contract playbook, redline, fallback position, what can we accept, escalate to legal",
+      "title": "Contract review",
+      "non_negotiable": false,
+      "id": "contract-review",
+      "file": "rules/contract-review.md"
+    }
+  ]
+}

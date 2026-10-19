@@ -1,0 +1,29 @@
+# .in-a-box/models.yaml : agent -> model per tier. Identifiers are yours to keep current.
+agents:
+  claude-code:
+    deep: opus
+    balanced: sonnet
+    fast: haiku
+  codex:
+    deep: null          # set these; null = not available, the router falls back and says so
+    balanced: null
+    fast: null
+  gemini-cli:
+    deep: null
+    balanced: null
+    fast: null
+defaults:
+  tier: balanced
+  skills:
+    tech-lead: deep
+    spec-analyst: deep
+    security-reviewer: deep
+    qa-tester: deep
+    acceptance-reviewer: balanced
+    developer: balanced
+    developer-python: balanced
+    developer-java: balanced
+    developer-android: balanced
+    developer-react: balanced
+    documenter: fast
+    changelog-keeper: fast

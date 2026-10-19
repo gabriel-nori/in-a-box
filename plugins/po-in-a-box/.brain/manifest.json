@@ -1,0 +1,23 @@
+{
+  "plugin": "po-in-a-box",
+  "skills": [
+    {
+      "name": "acceptance-reviewer",
+      "file": "skills/acceptance-reviewer/SKILL.md"
+    },
+    {
+      "name": "product-owner",
+      "file": "skills/product-owner/SKILL.md"
+    }
+  ],
+  "processes": [],
+  "rules": [
+    {
+      "scenario": "product owner, own the backlog, product goal, order the backlog, stakeholders ask for changes, say no to a request",
+      "title": "Product backlog ownership",
+      "non_negotiable": false,
+      "id": "product-backlog-ownership",
+      "file": "rules/product-backlog-ownership.md"
+    }
+  ]
+}

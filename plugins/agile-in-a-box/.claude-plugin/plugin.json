@@ -1,0 +1,17 @@
+{
+  "name": "agile-in-a-box",
+  "version": "0.1.0",
+  "description": "Agile roles: ceremony facilitation (daily, planning, refinement, retro), issue writing with INVEST and Definition of Ready, estimation, backlog prioritisation with PO and BA inputs, flow charts and working agreements.",
+  "author": {
+    "name": "Gabriel Almilhatti"
+  },
+  "keywords": [
+    "in-a-box",
+    "role",
+    "agile",
+    "scrum",
+    "kanban",
+    "backlog",
+    "estimation"
+  ]
+}

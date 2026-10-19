@@ -1,0 +1,67 @@
+{
+  "plugin": "architect-in-a-box",
+  "skills": [
+    {
+      "name": "architect-aws",
+      "file": "skills/architect-aws/SKILL.md"
+    },
+    {
+      "name": "architect-azure",
+      "file": "skills/architect-azure/SKILL.md"
+    },
+    {
+      "name": "architect-gcp",
+      "file": "skills/architect-gcp/SKILL.md"
+    },
+    {
+      "name": "architect-proxmox",
+      "file": "skills/architect-proxmox/SKILL.md"
+    },
+    {
+      "name": "architect-vmware",
+      "file": "skills/architect-vmware/SKILL.md"
+    },
+    {
+      "name": "solution-architect",
+      "file": "skills/solution-architect/SKILL.md"
+    }
+  ],
+  "processes": [],
+  "rules": [
+    {
+      "scenario": "architecture decision, design review, which cloud, choose a platform, trade-off, ADR, compare options, build or buy",
+      "title": "Every architecture decision is written down with its options, trade-off and cost of reversal",
+      "non_negotiable": false,
+      "id": "decide-with-records",
+      "file": "rules/decide-with-records.md"
+    },
+    {
+      "scenario": "high availability, disaster recovery, RTO, RPO, multi-AZ, backup, lock-in, vendor exit, migration off, failure modes, blast radius",
+      "title": "Every design states how it fails, how it recovers, and how it could be left",
+      "non_negotiable": false,
+      "id": "design-for-failure-and-exit",
+      "file": "rules/design-for-failure-and-exit.md"
+    },
+    {
+      "scenario": "quota, limit, region availability, service feature, pricing, licence terms, support dates, is it supported, provider documentation",
+      "title": "Provider facts are checked against current documentation and dated, never taken from memory",
+      "non_negotiable": false,
+      "id": "verify-provider-facts",
+      "file": "rules/verify-provider-facts.md"
+    },
+    {
+      "scenario": "adr, architecture decision record, decision log, why did we choose, record the decision",
+      "title": "Architecture decision recording",
+      "non_negotiable": false,
+      "id": "decision-recording",
+      "file": "rules/decision-recording.md"
+    },
+    {
+      "scenario": "architecture review, well-architected, pillars, review this design, reliability security cost performance",
+      "title": "Well-architected review",
+      "non_negotiable": false,
+      "id": "well-architected-review",
+      "file": "rules/well-architected-review.md"
+    }
+  ]
+}

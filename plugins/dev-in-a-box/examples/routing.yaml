@@ -1,0 +1,15 @@
+# .in-a-box/routing.yaml : overrides tech-lead routing. Where silent, repo evidence decides.
+default: developer            # fallback when nothing matches
+rules:
+  - match: ["**/*.py", "pyproject.toml"]
+    skill: developer-python
+  - match: ["pom.xml", "build.gradle", "**/*.java"]
+    skill: developer-java
+  - match: ["AndroidManifest.xml", "app/build.gradle*"]
+    skill: developer-android
+  - match: ["package.json:react"]
+    skill: developer-react
+  - match: ["**/*.sql", "migrations/**"]
+    skill: developer-sql
+preferences:
+  tech_lead: tech-lead        # swap for your own skill that produces interface-contracts + work-plan

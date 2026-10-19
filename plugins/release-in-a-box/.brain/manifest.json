@@ -1,0 +1,28 @@
+{
+  "plugin": "release-in-a-box",
+  "skills": [
+    {
+      "name": "release-manager",
+      "file": "skills/release-manager/SKILL.md"
+    }
+  ],
+  "processes": [
+    {
+      "id": "release-rollout",
+      "title": "Release and rollout",
+      "file": "processes/release-rollout.md",
+      "scenario": "release, ship, cut a release, version number, canary, staged rollout, rollback plan",
+      "roles": [
+        "release-manager",
+        "changelog-keeper",
+        "qa-tester"
+      ],
+      "sources": [
+        "S-008",
+        "S-013",
+        "S-014"
+      ]
+    }
+  ],
+  "rules": []
+}

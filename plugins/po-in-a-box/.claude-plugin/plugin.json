@@ -1,0 +1,13 @@
+{
+  "name": "po-in-a-box",
+  "version": "0.2.0",
+  "description": "Product Owner role: refining requests into testable requirements and deciding acceptance of delivered work.",
+  "author": {
+    "name": "Gabriel Almilhatti"
+  },
+  "keywords": [
+    "in-a-box",
+    "role",
+    "po"
+  ]
+}

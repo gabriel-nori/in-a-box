@@ -1,0 +1,13 @@
+{
+  "name": "lawyer-in-a-box",
+  "version": "0.1.0",
+  "description": "Legal Counsel role: identifying legal and contractual risk in a document, product or plan, and stating it in plain language.",
+  "author": {
+    "name": "Gabriel Almilhatti"
+  },
+  "keywords": [
+    "in-a-box",
+    "role",
+    "lawyer"
+  ]
+}

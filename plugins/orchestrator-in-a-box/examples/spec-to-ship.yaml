@@ -1,0 +1,38 @@
+name: spec-to-ship
+description: A request becomes a spec, is routed by a tech lead to stack developers, is broken by QA, accepted or sent back, then documented and shipped.
+nodes:
+  - id: refine
+    skill: product-owner
+  - id: spec
+    skill: spec-analyst            # evaluates product definition, resolves gaps, test plan + technical spec
+    after: [refine]
+  - id: lead
+    skill: tech-lead               # swap for your own skill producing interface-contracts + work-plan
+    after: [spec]
+  - id: build
+    route: work-plan               # one run per unit, skill chosen by the tech lead (developer-python, ...)
+    after: [lead]
+  - id: qa
+    skill: qa-tester
+    scope: adversarial             # smoke | standard | adversarial
+    after: [build]
+  - id: accept
+    skill: acceptance-reviewer
+    after: [qa]
+    gate: human                    # the product owner's decision is a person's, unless waived
+    on_reject:                     # omit the block to disable the loop
+      to: lead
+      max_iterations: 3
+  - id: docs
+    skill: documenter
+    after: [accept]
+  - id: changelog
+    skill: changelog-keeper
+    after: [docs]
+  - id: ship
+    skill: infra-engineer
+    after: [changelog]
+    gate: human
+models:                            # read by model-router-in-a-box when installed
+  lead: {tier: deep}
+  qa: {tier: deep}

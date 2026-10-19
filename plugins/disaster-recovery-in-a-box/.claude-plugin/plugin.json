@@ -1,0 +1,16 @@
+{
+  "name": "disaster-recovery-in-a-box",
+  "version": "0.1.0",
+  "description": "Disaster recovery roles: business impact analysis, RPO and RTO targets, recovery strategy and runbooks, ISO and framework mapping, and recovery test design and review.",
+  "author": {
+    "name": "Gabriel Almilhatti"
+  },
+  "keywords": [
+    "in-a-box",
+    "role",
+    "disaster-recovery",
+    "rpo",
+    "rto",
+    "iso-22301"
+  ]
+}

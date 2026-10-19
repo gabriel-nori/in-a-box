@@ -1,0 +1,47 @@
+{
+  "plugin": "dba-in-a-box",
+  "skills": [
+    {
+      "name": "dba",
+      "file": "skills/dba/SKILL.md"
+    },
+    {
+      "name": "dba-mysql",
+      "file": "skills/dba-mysql/SKILL.md"
+    },
+    {
+      "name": "dba-postgres",
+      "file": "skills/dba-postgres/SKILL.md"
+    },
+    {
+      "name": "dba-sqlserver",
+      "file": "skills/dba-sqlserver/SKILL.md"
+    }
+  ],
+  "processes": [
+    {
+      "id": "online-index-change",
+      "title": "Online index and schema change",
+      "file": "processes/online-index-change.md",
+      "scenario": "create index on a big table, add an index without locking, alter table on production, concurrently, migration locks",
+      "roles": [
+        "dba",
+        "dba-postgres",
+        "developer-sql"
+      ],
+      "sources": [
+        "S-032",
+        "S-031"
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "scenario": "slow query, optimise this query, why is this query slow, explain analyze, add an index, query plan",
+      "title": "Query optimisation",
+      "non_negotiable": false,
+      "id": "query-optimisation",
+      "file": "rules/query-optimisation.md"
+    }
+  ]
+}

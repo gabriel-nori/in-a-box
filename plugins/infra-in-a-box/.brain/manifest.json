@@ -1,0 +1,39 @@
+{
+  "plugin": "infra-in-a-box",
+  "skills": [
+    {
+      "name": "infra-ansible",
+      "file": "skills/infra-ansible/SKILL.md"
+    },
+    {
+      "name": "infra-cloudformation",
+      "file": "skills/infra-cloudformation/SKILL.md"
+    },
+    {
+      "name": "infra-engineer",
+      "file": "skills/infra-engineer/SKILL.md"
+    },
+    {
+      "name": "infra-pulumi",
+      "file": "skills/infra-pulumi/SKILL.md"
+    },
+    {
+      "name": "infra-puppet",
+      "file": "skills/infra-puppet/SKILL.md"
+    },
+    {
+      "name": "infra-terraform",
+      "file": "skills/infra-terraform/SKILL.md"
+    }
+  ],
+  "processes": [],
+  "rules": [
+    {
+      "scenario": "infrastructure change, terraform plan, ansible check, review infra change, collaborative iac",
+      "title": "Infrastructure as code change",
+      "non_negotiable": false,
+      "id": "infrastructure-as-code-change",
+      "file": "rules/infrastructure-as-code-change.md"
+    }
+  ]
+}

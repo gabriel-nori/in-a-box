@@ -1,0 +1,40 @@
+{
+  "plugin": "security-in-a-box",
+  "skills": [
+    {
+      "name": "security-reviewer",
+      "file": "skills/security-reviewer/SKILL.md"
+    },
+    {
+      "name": "threat-modeler",
+      "file": "skills/threat-modeler/SKILL.md"
+    }
+  ],
+  "processes": [
+    {
+      "id": "threat-modeling",
+      "title": "Threat modeling, in the order the questions build on each other",
+      "file": "processes/threat-modeling.md",
+      "scenario": "threat model, threat modeling, what can go wrong, STRIDE, trust boundaries, data flow diagram, security design review, new feature security",
+      "roles": [
+        "threat-modeler",
+        "security-reviewer",
+        "solution-architect"
+      ],
+      "sources": [
+        "S-044",
+        "S-045",
+        "S-046"
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "scenario": "secure sdlc, ssdf, owasp top ten, security review of a change, supply chain risk, secure by design",
+      "title": "Secure development practice",
+      "non_negotiable": false,
+      "id": "secure-development-practice",
+      "file": "rules/secure-development-practice.md"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "dev-in-a-box",
+  "version": "0.2.0",
+  "description": "Developer role: spec analysis, tech lead routing and stack-specialist developers (Python, Java, Android, React).",
+  "author": {
+    "name": "Gabriel Almilhatti"
+  },
+  "keywords": [
+    "in-a-box",
+    "role",
+    "dev",
+    "tech-lead",
+    "developer"
+  ]
+}

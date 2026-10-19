@@ -1,0 +1,77 @@
+{
+  "plugin": "observability-in-a-box",
+  "skills": [
+    {
+      "name": "incident-commander",
+      "file": "skills/incident-commander/SKILL.md"
+    },
+    {
+      "name": "observability-engineer",
+      "file": "skills/observability-engineer/SKILL.md"
+    },
+    {
+      "name": "observability-reader",
+      "file": "skills/observability-reader/SKILL.md"
+    }
+  ],
+  "processes": [
+    {
+      "id": "incident-response",
+      "title": "Incident response",
+      "file": "processes/incident-response.md",
+      "scenario": "incident, we are down, outage, declare an incident, incident commander, on-call escalation",
+      "roles": [
+        "incident-commander",
+        "observability-reader",
+        "infra-engineer"
+      ],
+      "sources": [
+        "S-005"
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "scenario": "add observability, instrument service, APM integration, logging, metrics, tracing, OpenTelemetry, correlation id, new service, deploy markers",
+      "title": "Apply observability: logs, metrics, traces and a shared correlation id on every component",
+      "non_negotiable": false,
+      "id": "apply-signals",
+      "file": "rules/apply-signals.md"
+    },
+    {
+      "scenario": "create alert, alerting, paging, SLO, error budget, burn rate, monitoring rules, runbook, on-call",
+      "title": "Alert on symptoms against an objective; every alert has an owner and a first action",
+      "non_negotiable": false,
+      "id": "alerting-and-slos",
+      "file": "rules/alerting-and-slos.md"
+    },
+    {
+      "scenario": "logging, log format, log redaction, trace attributes, PII in logs, secrets in logs, retention, telemetry data",
+      "title": "Logs and traces never carry secrets or personal data; redact at the source",
+      "non_negotiable": true,
+      "id": "log-hygiene",
+      "file": "rules/log-hygiene.md"
+    },
+    {
+      "scenario": "why is it slow, incident, read logs, read dashboard, root cause, post-deploy check, is the deploy healthy, investigate alert",
+      "title": "Read telemetry from symptom to cause on one timeline, with stated confidence",
+      "non_negotiable": false,
+      "id": "read-signals",
+      "file": "rules/read-signals.md"
+    },
+    {
+      "scenario": "alerts, paging, alert fatigue, what should page, golden signals, symptom based alerting",
+      "title": "Alert design",
+      "non_negotiable": false,
+      "id": "alert-design",
+      "file": "rules/alert-design.md"
+    },
+    {
+      "scenario": "slo, sli, error budget, reliability target, how reliable should this be, error budget policy",
+      "title": "Service level objectives and error budget",
+      "non_negotiable": false,
+      "id": "slo-and-error-budget",
+      "file": "rules/slo-and-error-budget.md"
+    }
+  ]
+}

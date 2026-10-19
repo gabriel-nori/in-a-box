@@ -1,0 +1,59 @@
+{
+  "plugin": "governance-in-a-box",
+  "skills": [
+    {
+      "name": "controls-auditor",
+      "file": "skills/controls-auditor/SKILL.md"
+    },
+    {
+      "name": "decision-steward",
+      "file": "skills/decision-steward/SKILL.md"
+    },
+    {
+      "name": "policy-author",
+      "file": "skills/policy-author/SKILL.md"
+    },
+    {
+      "name": "risk-register",
+      "file": "skills/risk-register/SKILL.md"
+    }
+  ],
+  "processes": [],
+  "rules": [
+    {
+      "scenario": "write a policy, security policy, acceptable use policy, standard, policy exception, policy review, who owns this policy",
+      "title": "A policy has an owner, a source and a review date, and an exception has a compensating control and an expiry",
+      "non_negotiable": false,
+      "id": "policy-has-owner-source-and-expiry",
+      "file": "rules/policy-has-owner-source-and-expiry.md"
+    },
+    {
+      "scenario": "risk register, risk appetite, risk scoring, accept a risk, risk treatment, ISO 31000, residual risk",
+      "title": "A risk is accepted by a named person with authority, on a date, with a review, and scored on one stated scale",
+      "non_negotiable": false,
+      "id": "risk-acceptance-needs-a-named-owner",
+      "file": "rules/risk-acceptance-needs-a-named-owner.md"
+    },
+    {
+      "scenario": "controls audit, LGPD, GDPR, ISO 27001, SOC 2, data governance, AI governance, ISO 42001, audit readiness, compliance evidence",
+      "title": "A control is met only with evidence that it operated, design and operation are reported apart, and the audit changes nothing",
+      "non_negotiable": false,
+      "id": "control-status-needs-operating-evidence",
+      "file": "rules/control-status-needs-operating-evidence.md"
+    },
+    {
+      "scenario": "RACI, ADR, decision record, who decides, approval matrix, change advisory board, change approval, why did we decide",
+      "title": "Decisions keep their context, options and reasons, have one accountable party, and are superseded rather than rewritten",
+      "non_negotiable": false,
+      "id": "decisions-keep-their-reasons",
+      "file": "rules/decisions-keep-their-reasons.md"
+    },
+    {
+      "scenario": "governance vs management, policy, who decides, evaluate direct monitor, board oversight, cybersecurity governance",
+      "title": "Governance direction and control",
+      "non_negotiable": false,
+      "id": "governance-direction-and-control",
+      "file": "rules/governance-direction-and-control.md"
+    }
+  ]
+}

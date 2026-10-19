@@ -1,0 +1,13 @@
+{
+  "name": "postmortem-in-a-box",
+  "version": "0.1.0",
+  "description": "Postmortem role: blameless postmortems for outages, escaped defects, vulnerabilities and attacks.",
+  "author": {
+    "name": "Gabriel Almilhatti"
+  },
+  "keywords": [
+    "in-a-box",
+    "role",
+    "postmortem"
+  ]
+}

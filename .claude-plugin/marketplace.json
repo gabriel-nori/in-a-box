@@ -1,0 +1,113 @@
+{
+  "name": "in-a-box",
+  "owner": {
+    "name": "Gabriel Almilhatti"
+  },
+  "plugins": [
+    {
+      "name": "dev-in-a-box",
+      "source": "./plugins/dev-in-a-box",
+      "description": "Developer role: spec analysis, tech lead routing and stack-specialist developers (Python, Java, Android, React)."
+    },
+    {
+      "name": "po-in-a-box",
+      "source": "./plugins/po-in-a-box",
+      "description": "Product Owner role: refining requests into testable requirements and deciding acceptance of delivered work."
+    },
+    {
+      "name": "business-in-a-box",
+      "source": "./plugins/business-in-a-box",
+      "description": "Business Analyst role: establishing whether a thing is worth doing: value, cost, risk and the numbers behind them."
+    },
+    {
+      "name": "security-in-a-box",
+      "source": "./plugins/security-in-a-box",
+      "description": "Security Reviewer role: finding and ranking security risk in a design or change, and saying what would close each risk."
+    },
+    {
+      "name": "marketing-in-a-box",
+      "source": "./plugins/marketing-in-a-box",
+      "description": "Marketer role: turning what the product is into positioning and content a defined audience will understand and act on."
+    },
+    {
+      "name": "lawyer-in-a-box",
+      "source": "./plugins/lawyer-in-a-box",
+      "description": "Legal Counsel role: identifying legal and contractual risk in a document, product or plan, and stating it in plain language."
+    },
+    {
+      "name": "support-in-a-box",
+      "source": "./plugins/support-in-a-box",
+      "description": "Support Agent role: resolving or correctly routing a customer issue with an answer that is accurate and kind."
+    },
+    {
+      "name": "infra-in-a-box",
+      "source": "./plugins/infra-in-a-box",
+      "description": "Infra Engineer and IaC specialists (Terraform, Pulumi, CloudFormation, Puppet): reproducible environments with reviewed previews and gated applies."
+    },
+    {
+      "name": "qa-in-a-box",
+      "source": "./plugins/qa-in-a-box",
+      "description": "QA role: black-box testing of a running application against its test plan, within a declared scope."
+    },
+    {
+      "name": "docs-in-a-box",
+      "source": "./plugins/docs-in-a-box",
+      "description": "Documentation role: documentation and changelog for an approved delivery."
+    },
+    {
+      "name": "model-router-in-a-box",
+      "source": "./plugins/model-router-in-a-box",
+      "description": "Chooses the model for each flow node from the agent host in use."
+    },
+    {
+      "name": "orchestrator-in-a-box",
+      "source": "./plugins/orchestrator-in-a-box",
+      "description": "Connects role plugins into user-defined flows on demand."
+    },
+    {
+      "name": "observability-in-a-box",
+      "source": "./plugins/observability-in-a-box",
+      "description": "Observability Engineer and Reader: instrumenting tools and the deploy stack (logs, metrics, traces, APM, alerts) and reading the signals."
+    },
+    {
+      "name": "architect-in-a-box",
+      "source": "./plugins/architect-in-a-box",
+      "description": "Solution Architect role and cloud specialists: AWS, GCP, Azure, Proxmox and VMware designs with service-level knowledge, platform comparison and decision records."
+    },
+    {
+      "name": "finops-in-a-box",
+      "source": "./plugins/finops-in-a-box",
+      "description": "FinOps roles: cost estimates from provider calculators and pricing APIs, budget planning from scope and complexity, budgets and alerts, and cost monitoring."
+    },
+    {
+      "name": "disaster-recovery-in-a-box",
+      "source": "./plugins/disaster-recovery-in-a-box",
+      "description": "Disaster recovery roles: business impact analysis, RPO and RTO targets, recovery strategy and runbooks, ISO and framework mapping, and recovery test design and review."
+    },
+    {
+      "name": "governance-in-a-box",
+      "source": "./plugins/governance-in-a-box",
+      "description": "Governance roles: policies and exceptions, risk register and appetite, control audit across security, privacy, data and AI frameworks, and decision rights with a traceable decision log."
+    },
+    {
+      "name": "agile-in-a-box",
+      "source": "./plugins/agile-in-a-box",
+      "description": "Agile ceremonies, issue writing, estimation, backlog prioritisation, flow metrics and working agreements."
+    },
+    {
+      "name": "dba-in-a-box",
+      "source": "./plugins/dba-in-a-box",
+      "description": "dba role."
+    },
+    {
+      "name": "release-in-a-box",
+      "source": "./plugins/release-in-a-box",
+      "description": "release role."
+    },
+    {
+      "name": "postmortem-in-a-box",
+      "source": "./plugins/postmortem-in-a-box",
+      "description": "Postmortem role: blameless postmortems for outages, escaped defects, vulnerabilities and attacks."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "plugin": "disaster-recovery-in-a-box",
+  "skills": [
+    {
+      "name": "continuity-standards",
+      "file": "skills/continuity-standards/SKILL.md"
+    },
+    {
+      "name": "dr-planner",
+      "file": "skills/dr-planner/SKILL.md"
+    },
+    {
+      "name": "dr-tester",
+      "file": "skills/dr-tester/SKILL.md"
+    }
+  ],
+  "processes": [
+    {
+      "id": "continuity-planning",
+      "title": "Contingency and continuity planning",
+      "file": "processes/continuity-planning.md",
+      "scenario": "business impact analysis, bia, contingency plan, continuity plan, maximum tolerable downtime, recovery objectives",
+      "roles": [
+        "dr-planner",
+        "continuity-standards"
+      ],
+      "sources": [
+        "S-024",
+        "S-023",
+        "S-025"
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "scenario": "RPO, RTO, recovery objective, business impact analysis, BIA, disaster recovery plan, how fast must we recover, maximum downtime, data loss tolerance",
+      "title": "RPO and RTO come from business impact per service, with an owner, never from a tier template",
+      "non_negotiable": false,
+      "id": "targets-from-impact",
+      "file": "rules/targets-from-impact.md"
+    },
+    {
+      "scenario": "backup strategy, restore test, backup retention, immutable backup, ransomware recovery, replication versus backup, offsite backup",
+      "title": "A backup counts only after a verified restore, and lives outside the failure domain it protects against",
+      "non_negotiable": false,
+      "id": "untested-backup-is-not-a-backup",
+      "file": "rules/untested-backup-is-not-a-backup.md"
+    },
+    {
+      "scenario": "DR test, failover drill, tabletop exercise, recovery capability, did we meet the RTO, DR readiness report",
+      "title": "Report recovery as measured values from named exercises, never the design target",
+      "non_negotiable": false,
+      "id": "measured-recovery-beats-claimed",
+      "file": "rules/measured-recovery-beats-claimed.md"
+    },
+    {
+      "scenario": "ISO 22301, ISO 27031, ISO 27001 continuity, business continuity audit, DORA, NIS2, compliance claim, certified or aligned",
+      "title": "A standards claim names the clause, the evidence and the status, and never mixes alignment with certification",
+      "non_negotiable": false,
+      "id": "standards-claims-name-the-clause",
+      "file": "rules/standards-claims-name-the-clause.md"
+    },
+    {
+      "scenario": "dr test, disaster recovery test, tabletop exercise, failover test, restore test",
+      "title": "Recovery exercise",
+      "non_negotiable": false,
+      "id": "dr-exercise",
+      "file": "rules/dr-exercise.md"
+    },
+    {
+      "scenario": "which dr strategy, pilot light vs warm standby, backup and restore, rto rpo choice, failover design",
+      "title": "Disaster recovery strategy selection",
+      "non_negotiable": false,
+      "id": "dr-strategy-selection",
+      "file": "rules/dr-strategy-selection.md"
+    }
+  ]
+}

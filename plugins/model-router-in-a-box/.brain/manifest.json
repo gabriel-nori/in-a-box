@@ -1,0 +1,11 @@
+{
+  "plugin": "model-router-in-a-box",
+  "skills": [
+    {
+      "name": "model-router",
+      "file": "skills/model-router/SKILL.md"
+    }
+  ],
+  "processes": [],
+  "rules": []
+}

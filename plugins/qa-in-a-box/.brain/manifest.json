@@ -1,0 +1,19 @@
+{
+  "plugin": "qa-in-a-box",
+  "skills": [
+    {
+      "name": "qa-tester",
+      "file": "skills/qa-tester/SKILL.md"
+    }
+  ],
+  "processes": [],
+  "rules": [
+    {
+      "scenario": "test plan, test strategy, how should we test this, test design, test completion report, qa process",
+      "title": "Test process",
+      "non_negotiable": false,
+      "id": "test-process",
+      "file": "rules/test-process.md"
+    }
+  ]
+}

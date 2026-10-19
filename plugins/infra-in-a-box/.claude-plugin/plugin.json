@@ -1,0 +1,13 @@
+{
+  "name": "infra-in-a-box",
+  "version": "0.1.0",
+  "description": "Infra Engineer role: making sure software has an environment it can run, deploy and be observed in, reproducibly.",
+  "author": {
+    "name": "Gabriel Almilhatti"
+  },
+  "keywords": [
+    "in-a-box",
+    "role",
+    "infra"
+  ]
+}

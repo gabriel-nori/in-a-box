@@ -1,0 +1,13 @@
+{
+  "name": "security-in-a-box",
+  "version": "0.1.0",
+  "description": "Security Reviewer role: finding and ranking security risk in a design or change, and saying what would close each risk.",
+  "author": {
+    "name": "Gabriel Almilhatti"
+  },
+  "keywords": [
+    "in-a-box",
+    "role",
+    "security"
+  ]
+}

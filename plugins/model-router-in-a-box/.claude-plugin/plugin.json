@@ -1,0 +1,14 @@
+{
+  "name": "model-router-in-a-box",
+  "version": "0.1.0",
+  "description": "Chooses the model for each flow node from the agent host in use.",
+  "author": {
+    "name": "Gabriel Almilhatti"
+  },
+  "keywords": [
+    "in-a-box",
+    "role",
+    "router",
+    "models"
+  ]
+}

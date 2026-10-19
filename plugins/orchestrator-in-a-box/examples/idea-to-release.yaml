@@ -1,0 +1,18 @@
+name: idea-to-release
+description: From a rough idea to a reviewed change, with a human gate before anything outward.
+nodes:
+  - id: case
+    skill: business-analyst
+  - id: refine
+    skill: product-owner
+    after: [case]
+  - id: build
+    skill: developer
+    after: [refine]
+  - id: review
+    skill: security-reviewer
+    after: [build]
+  - id: ship
+    skill: infra-engineer
+    after: [review]
+    gate: human

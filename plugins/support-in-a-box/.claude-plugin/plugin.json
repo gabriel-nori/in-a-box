@@ -1,0 +1,13 @@
+{
+  "name": "support-in-a-box",
+  "version": "0.1.0",
+  "description": "Support Agent role: resolving or correctly routing a customer issue with an answer that is accurate and kind.",
+  "author": {
+    "name": "Gabriel Almilhatti"
+  },
+  "keywords": [
+    "in-a-box",
+    "role",
+    "support"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "qa-in-a-box",
+  "version": "0.1.0",
+  "description": "QA role: black-box testing of a running application against its test plan, within a declared scope.",
+  "author": {
+    "name": "Gabriel Almilhatti"
+  },
+  "keywords": [
+    "in-a-box",
+    "role",
+    "qa"
+  ]
+}

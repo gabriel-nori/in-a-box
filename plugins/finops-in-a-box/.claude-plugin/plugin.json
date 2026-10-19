@@ -1,0 +1,15 @@
+{
+  "name": "finops-in-a-box",
+  "version": "0.1.0",
+  "description": "FinOps roles: cost estimates from provider calculators and pricing APIs, budget planning from scope and complexity, budgets and alerts, and cost monitoring.",
+  "author": {
+    "name": "Gabriel Almilhatti"
+  },
+  "keywords": [
+    "in-a-box",
+    "role",
+    "finops",
+    "cost",
+    "budget"
+  ]
+}

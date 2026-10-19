@@ -1,0 +1,13 @@
+{
+  "name": "dba-in-a-box",
+  "version": "0.1.0",
+  "description": "dba role.",
+  "author": {
+    "name": "Gabriel Almilhatti"
+  },
+  "keywords": [
+    "in-a-box",
+    "role",
+    "dba"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "plugin": "business-in-a-box",
+  "skills": [
+    {
+      "name": "business-analyst",
+      "file": "skills/business-analyst/SKILL.md"
+    }
+  ],
+  "processes": [],
+  "rules": [
+    {
+      "scenario": "are these requirements good, requirement quality, unambiguous, verifiable, business analysis, acceptance criteria",
+      "title": "Requirements quality check",
+      "non_negotiable": false,
+      "id": "requirements-quality",
+      "file": "rules/requirements-quality.md"
+    }
+  ]
+}

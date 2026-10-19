@@ -1,0 +1,36 @@
+{
+  "plugin": "postmortem-in-a-box",
+  "skills": [
+    {
+      "name": "postmortem-author",
+      "file": "skills/postmortem-author/SKILL.md"
+    },
+    {
+      "name": "postmortem-defect",
+      "file": "skills/postmortem-defect/SKILL.md"
+    },
+    {
+      "name": "postmortem-security",
+      "file": "skills/postmortem-security/SKILL.md"
+    }
+  ],
+  "processes": [
+    {
+      "id": "blameless-postmortem",
+      "title": "Blameless postmortem",
+      "file": "processes/blameless-postmortem.md",
+      "scenario": "postmortem, post-mortem, RCA, root cause analysis, lessons learned, incident review, bug postmortem, security incident review, breach review, vulnerability review",
+      "roles": [
+        "postmortem-author",
+        "postmortem-defect",
+        "postmortem-security",
+        "incident-commander"
+      ],
+      "sources": [
+        "S-006",
+        "S-062"
+      ]
+    }
+  ],
+  "rules": []
+}

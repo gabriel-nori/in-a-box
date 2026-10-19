@@ -1,0 +1,15 @@
+{
+    "name":  "observability-in-a-box",
+    "version":  "0.1.0",
+    "description":  "Observability Engineer and Reader roles: instrumenting tools and the deploy stack with logs, metrics, traces and APM, defining alerting rules, and reading the signals.",
+    "author":  {
+                   "name":  "Gabriel Almilhatti"
+               },
+    "keywords":  [
+                     "in-a-box",
+                     "role",
+                     "observability",
+                     "apm",
+                     "logs"
+                 ]
+}

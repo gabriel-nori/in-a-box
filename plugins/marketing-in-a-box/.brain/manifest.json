@@ -1,0 +1,19 @@
+{
+  "plugin": "marketing-in-a-box",
+  "skills": [
+    {
+      "name": "marketer",
+      "file": "skills/marketer/SKILL.md"
+    }
+  ],
+  "processes": [],
+  "rules": [
+    {
+      "scenario": "positioning, messaging, go to market, launch plan, product marketing, differentiate",
+      "title": "Product positioning and launch",
+      "non_negotiable": false,
+      "id": "product-positioning-launch",
+      "file": "rules/product-positioning-launch.md"
+    }
+  ]
+}

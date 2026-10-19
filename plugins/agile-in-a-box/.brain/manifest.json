@@ -1,0 +1,109 @@
+{
+  "plugin": "agile-in-a-box",
+  "skills": [
+    {
+      "name": "agile-facilitator",
+      "file": "skills/agile-facilitator/SKILL.md"
+    },
+    {
+      "name": "agile-metrics",
+      "file": "skills/agile-metrics/SKILL.md"
+    },
+    {
+      "name": "backlog-prioritizer",
+      "file": "skills/backlog-prioritizer/SKILL.md"
+    },
+    {
+      "name": "estimator",
+      "file": "skills/estimator/SKILL.md"
+    },
+    {
+      "name": "facilitate-daily",
+      "file": "skills/facilitate-daily/SKILL.md"
+    },
+    {
+      "name": "facilitate-planning",
+      "file": "skills/facilitate-planning/SKILL.md"
+    },
+    {
+      "name": "facilitate-refinement",
+      "file": "skills/facilitate-refinement/SKILL.md"
+    },
+    {
+      "name": "facilitate-retro",
+      "file": "skills/facilitate-retro/SKILL.md"
+    },
+    {
+      "name": "issue-writer",
+      "file": "skills/issue-writer/SKILL.md"
+    },
+    {
+      "name": "working-agreements",
+      "file": "skills/working-agreements/SKILL.md"
+    }
+  ],
+  "processes": [
+    {
+      "id": "scrum-sprint-cycle",
+      "title": "The Scrum Sprint, in the order its events happen",
+      "file": "processes/scrum-sprint-cycle.md",
+      "scenario": "sprint, sprint planning, plan the sprint, sprint goal, daily scrum, sprint review, retrospective, close the sprint, what happens in a sprint",
+      "roles": [
+        "facilitate-planning",
+        "backlog-prioritizer",
+        "estimator",
+        "facilitate-daily",
+        "agile-facilitator",
+        "facilitate-retro",
+        "working-agreements"
+      ],
+      "sources": [
+        "S-001"
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "scenario": "retro, blame, post-mortem, why did this slip, who caused, team feedback",
+      "title": "Agile findings describe the mechanism, not the person",
+      "non_negotiable": false,
+      "id": "mechanism-not-character",
+      "file": "rules/mechanism-not-character.md"
+    },
+    {
+      "scenario": "estimate, story points, how long, deadline, commit, forecast, velocity",
+      "title": "Estimates are ranges with assumptions, never commitments or single numbers",
+      "non_negotiable": false,
+      "id": "estimates-are-ranges",
+      "file": "rules/estimates-are-ranges.md"
+    },
+    {
+      "scenario": "velocity, burndown, KPI, metric, productivity, compare teams, target",
+      "title": "Flow metrics describe the system and are never targets or personal scores",
+      "non_negotiable": false,
+      "id": "metrics-are-not-targets",
+      "file": "rules/metrics-are-not-targets.md"
+    },
+    {
+      "scenario": "prioritise, backlog order, roadmap, WSJF, RICE, ROI, what first",
+      "title": "Priority is a visible calculation with sourced inputs; the product owner decides",
+      "non_negotiable": false,
+      "id": "ordered-with-sources",
+      "file": "rules/ordered-with-sources.md"
+    },
+    {
+      "scenario": "kanban, wip limit, cycle time, throughput, work item age, flow, service level expectation",
+      "title": "Kanban flow management",
+      "non_negotiable": false,
+      "id": "kanban-flow-management",
+      "file": "rules/kanban-flow-management.md"
+    },
+    {
+      "scenario": "refinement, grooming, backlog refinement, make stories ready, split stories, size items",
+      "title": "Product Backlog refinement",
+      "non_negotiable": false,
+      "id": "scrum-backlog-refinement",
+      "file": "rules/scrum-backlog-refinement.md"
+    }
+  ]
+}

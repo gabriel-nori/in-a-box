@@ -1,0 +1,5 @@
+.in-a-box/
+__pycache__/
+*.pyc
+.DS_Store
+.env

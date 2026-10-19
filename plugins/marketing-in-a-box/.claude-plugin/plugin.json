@@ -1,0 +1,13 @@
+{
+  "name": "marketing-in-a-box",
+  "version": "0.1.0",
+  "description": "Marketer role: turning what the product is into positioning and content a defined audience will understand and act on.",
+  "author": {
+    "name": "Gabriel Almilhatti"
+  },
+  "keywords": [
+    "in-a-box",
+    "role",
+    "marketing"
+  ]
+}

@@ -108,6 +108,16 @@
       "name": "postmortem-in-a-box",
       "source": "./plugins/postmortem-in-a-box",
       "description": "Postmortem role: blameless postmortems for outages, escaped defects, vulnerabilities and attacks."
+    },
+    {
+      "name": "research-in-a-box",
+      "source": "./plugins/research-in-a-box",
+      "description": "Research role: sourced research with a baseline and a diff on refresh."
+    },
+    {
+      "name": "curator-in-a-box",
+      "source": "./plugins/curator-in-a-box",
+      "description": "Curator role: integrating or updating a skill in the plugin tree."
     }
   ]
 }

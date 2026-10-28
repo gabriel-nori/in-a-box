@@ -350,3 +350,6 @@ Mirror of every `Depends on` section (CONVENTIONS section 3). `scripts/check-con
 | `canvas-designer` | optional-enriching | `business-analyst` | `business-case` |
 | `swot-analyst` | requires | `none` |  |
 | `swot-analyst` | optional-enriching | `business-analyst` | `business-case` |
+| `source-researcher` | requires | `none` |  |
+| `skill-integrator` | optional-ordered | `source-researcher` | `research-findings` |
+| `skill-integrator` | requires | `none` |  |

@@ -1,0 +1,13 @@
+{
+  "name": "research-in-a-box",
+  "version": "0.1.0",
+  "description": "Research role: sourced research with a baseline and a diff on refresh.",
+  "author": {
+    "name": "Gabriel Almilhatti"
+  },
+  "keywords": [
+    "in-a-box",
+    "role",
+    "research"
+  ]
+}

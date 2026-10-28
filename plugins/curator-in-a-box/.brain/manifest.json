@@ -1,0 +1,19 @@
+{
+  "plugin": "curator-in-a-box",
+  "skills": [
+    {
+      "name": "skill-integrator",
+      "file": "skills/skill-integrator/SKILL.md"
+    }
+  ],
+  "processes": [],
+  "rules": [
+    {
+      "scenario": "add this skill to the tree, integrate this skill, update this skill, rename a clause, where does this skill go",
+      "title": "Integrating or updating a skill in the tree",
+      "non_negotiable": false,
+      "id": "integrate-skill-into-tree",
+      "file": "rules/integrate-skill-into-tree.md"
+    }
+  ]
+}

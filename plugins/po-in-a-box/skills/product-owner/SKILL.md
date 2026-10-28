@@ -27,6 +27,8 @@ Implementation details are withheld; the requirement states the problem, not the
 See [`docs/skill-dependencies.md`](../../../../docs/skill-dependencies.md) (CONVENTIONS section 3).
 - **Requires:** none.
 - **Optional (enriching):** `business-analyst` (`business-case`): value and constraints behind the request; read it if it has landed, never wait.
+- **Optional (enriching):** `canvas-designer` (`business-model-canvas`): segments and value propositions; read it if it has landed, never wait.
+- **Optional (enriching):** `process-modeler` (`process-model`): the process the requirement changes; read it if it has landed, never wait.
 - **Produces:** `refined-requirement`: Problem, users, scope, out-of-scope, acceptance criteria.
 
 ## Deliverables

@@ -29,6 +29,8 @@ See [`docs/skill-dependencies.md`](../../../../docs/skill-dependencies.md) (CONV
 - **Optional (enriching):** `marketer` (`positioning`): market and audience evidence; read it if it has landed, never wait.
 - **Optional (enriching):** `cost-estimator` (`cost-estimate`): the run and build cost to weigh against value; read it if it has landed, never wait.
 - **Optional (enriching):** `estimator` (`estimate`): the time range to build, the input to cost of time and ROI; read it if it has landed, never wait.
+- **Optional (enriching):** `swot-analyst` (`swot`): strengths, weaknesses, opportunities and threats; read it if it has landed, never wait.
+- **Optional (enriching):** `canvas-designer` (`business-model-canvas`): how the idea creates and captures value; read it if it has landed, never wait.
 - **Produces:** `business-case`: Value, cost, risks, assumptions and a recommendation.
 
 ## Deliverables

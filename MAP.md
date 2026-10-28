@@ -18,7 +18,7 @@ Root of the brain import. Read this first, then each plugin's `.brain/MAP.md`.
 |---|---|---|
 | `agile-in-a-box` | 10 | `agile-charts`, `ceremony-notes`, `estimate`, `prioritized-backlog`, `ready-issue`, `working-agreements` |
 | `architect-in-a-box` | 6 | `architecture-design` |
-| `business-in-a-box` | 1 | `business-case` |
+| `business-in-a-box` | 4 | `business-case`, `business-model-canvas`, `process-model`, `swot` |
 | `dba-in-a-box` | 4 | `query-review` |
 | `dev-in-a-box` | 15 | `implementation-summary`, `interface-contracts`, `review-report`, `technical-spec`, `test-plan`, `work-plan` |
 | `disaster-recovery-in-a-box` | 3 | `continuity-compliance`, `dr-plan`, `dr-test-report` |
@@ -27,7 +27,7 @@ Root of the brain import. Read this first, then each plugin's `.brain/MAP.md`.
 | `governance-in-a-box` | 4 | `control-findings`, `decision-log`, `policy-set`, `risk-register` |
 | `infra-in-a-box` | 6 | `environment-notes` |
 | `lawyer-in-a-box` | 1 | `legal-notes` |
-| `marketing-in-a-box` | 1 | `positioning` |
+| `marketing-in-a-box` | 4 | `communication-guide`, `pitch`, `positioning`, `relationship-flow` |
 | `model-router-in-a-box` | 1 | `model-assignment` |
 | `observability-in-a-box` | 3 | `incident-record`, `observability-findings`, `observability-plan` |
 | `orchestrator-in-a-box` | 3 | `command-file`, `flow-definition`, `run-record` |
@@ -40,7 +40,7 @@ Root of the brain import. Read this first, then each plugin's `.brain/MAP.md`.
 
 ## Layers (execution order from Requires and Optional-ordered edges)
 
-0. `agile-facilitator`, `agile-metrics`, `architect-aws`, `architect-azure`, `architect-gcp`, `architect-proxmox`, `architect-vmware`, `backlog-prioritizer`, `budget-planner`, `business-analyst`, `code-reviewer-iac`, `compose-flow`, `continuity-standards`, `controls-auditor`, `cost-estimator`, `cost-monitor`, `dba`, `dba-mysql`, `dba-postgres`, `dba-sqlserver`, `decision-steward`, `dr-planner`, `dr-tester`, `estimator`, `facilitate-daily`, `facilitate-planning`, `facilitate-refinement`, `facilitate-retro`, `incident-commander`, `infra-ansible`, `infra-cloudformation`, `infra-engineer`, `infra-pulumi`, `infra-puppet`, `infra-terraform`, `issue-writer`, `legal-counsel`, `marketer`, `model-router`, `observability-engineer`, `observability-reader`, `policy-author`, `postmortem-defect`, `postmortem-security`, `process-to-command`, `product-owner`, `risk-register`, `solution-architect`, `support-agent`, `threat-modeler`, `working-agreements`
+0. `agile-facilitator`, `agile-metrics`, `architect-aws`, `architect-azure`, `architect-gcp`, `architect-proxmox`, `architect-vmware`, `backlog-prioritizer`, `budget-planner`, `business-analyst`, `canvas-designer`, `code-reviewer-iac`, `communicator`, `compose-flow`, `continuity-standards`, `controls-auditor`, `cost-estimator`, `cost-monitor`, `dba`, `dba-mysql`, `dba-postgres`, `dba-sqlserver`, `decision-steward`, `dr-planner`, `dr-tester`, `estimator`, `facilitate-daily`, `facilitate-planning`, `facilitate-refinement`, `facilitate-retro`, `incident-commander`, `infra-ansible`, `infra-cloudformation`, `infra-engineer`, `infra-pulumi`, `infra-puppet`, `infra-terraform`, `issue-writer`, `legal-counsel`, `marketer`, `model-router`, `observability-engineer`, `observability-reader`, `pitcher`, `policy-author`, `postmortem-defect`, `postmortem-security`, `process-modeler`, `process-to-command`, `product-owner`, `relationship-designer`, `risk-register`, `solution-architect`, `support-agent`, `swot-analyst`, `threat-modeler`, `working-agreements`
 1. `code-reviewer-sql`, `postmortem-author`, `run-flow`, `spec-analyst`
 2. `code-reviewer-android`, `code-reviewer-java`, `code-reviewer-python`, `code-reviewer-react`, `tech-lead`
 3. `developer`, `developer-android`, `developer-java`, `developer-python`, `developer-react`, `developer-sql`
@@ -132,6 +132,7 @@ Root of the brain import. Read this first, then each plugin's `.brain/MAP.md`.
 | `dev-in-a-box/developer-sql` | optional-enriching | `infra-in-a-box/infra-engineer` | `environment-notes` |
 | `dev-in-a-box/developer-sql` | optional-enriching | `security-in-a-box/security-reviewer` | `threat-notes` |
 | `dev-in-a-box/spec-analyst` | optional-enriching | `infra-in-a-box/infra-engineer` | `environment-notes` |
+| `dev-in-a-box/spec-analyst` | optional-enriching | `business-in-a-box/process-modeler` | `process-model` |
 | `dev-in-a-box/spec-analyst` | optional-enriching | `security-in-a-box/security-reviewer` | `threat-notes` |
 | `dev-in-a-box/spec-analyst` | requires | `po-in-a-box/product-owner` | `refined-requirement` |
 | `dev-in-a-box/tech-lead` | optional-enriching | `po-in-a-box/acceptance-reviewer` | `acceptance-decision` |
@@ -215,8 +216,15 @@ Root of the brain import. Read this first, then each plugin's `.brain/MAP.md`.
 | `infra-in-a-box/infra-terraform` | optional-enriching | `security-in-a-box/security-reviewer` | `threat-notes` |
 | `infra-in-a-box/infra-terraform` | optional-enriching | `architect-in-a-box/solution-architect` | `architecture-design` |
 | `lawyer-in-a-box/legal-counsel` | optional-enriching | `security-in-a-box/security-reviewer` | `threat-notes` |
+| `marketing-in-a-box/communicator` | optional-enriching | `support-in-a-box/support-agent` | `support-resolution` |
 | `marketing-in-a-box/marketer` | optional-enriching | `business-in-a-box/business-analyst` | `business-case` |
+| `marketing-in-a-box/marketer` | optional-enriching | `business-in-a-box/canvas-designer` | `business-model-canvas` |
 | `marketing-in-a-box/marketer` | optional-enriching | `po-in-a-box/product-owner` | `refined-requirement` |
+| `marketing-in-a-box/marketer` | optional-enriching | `business-in-a-box/swot-analyst` | `swot` |
+| `marketing-in-a-box/pitcher` | optional-enriching | `business-in-a-box/business-analyst` | `business-case` |
+| `marketing-in-a-box/pitcher` | optional-enriching | `business-in-a-box/canvas-designer` | `business-model-canvas` |
+| `marketing-in-a-box/pitcher` | optional-enriching | `business-in-a-box/swot-analyst` | `swot` |
+| `marketing-in-a-box/relationship-designer` | optional-enriching | `support-in-a-box/support-agent` | `support-resolution` |
 | `observability-in-a-box/incident-commander` | optional-enriching | `disaster-recovery-in-a-box/dr-planner` | `dr-plan` |
 | `observability-in-a-box/incident-commander` | optional-enriching | `infra-in-a-box/infra-engineer` | `environment-notes` |
 | `observability-in-a-box/observability-engineer` | optional-enriching | `dev-in-a-box/developer` | `implementation-summary` |
@@ -227,6 +235,8 @@ Root of the brain import. Read this first, then each plugin's `.brain/MAP.md`.
 | `orchestrator-in-a-box/run-flow` | optional-enriching | `model-router-in-a-box/model-router` | `model-assignment` |
 | `po-in-a-box/acceptance-reviewer` | requires | `qa-in-a-box/qa-tester` | `qa-report` |
 | `po-in-a-box/product-owner` | optional-enriching | `business-in-a-box/business-analyst` | `business-case` |
+| `po-in-a-box/product-owner` | optional-enriching | `business-in-a-box/canvas-designer` | `business-model-canvas` |
+| `po-in-a-box/product-owner` | optional-enriching | `business-in-a-box/process-modeler` | `process-model` |
 | `postmortem-in-a-box/postmortem-author` | optional-enriching | `observability-in-a-box/observability-engineer` | `observability-plan` |
 | `postmortem-in-a-box/postmortem-author` | optional-enriching | `observability-in-a-box/observability-reader` | `observability-findings` |
 | `postmortem-in-a-box/postmortem-author` | optional-ordered | `observability-in-a-box/incident-commander` | `incident-record` |

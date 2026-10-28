@@ -4,6 +4,18 @@
     {
       "name": "business-analyst",
       "file": "skills/business-analyst/SKILL.md"
+    },
+    {
+      "name": "canvas-designer",
+      "file": "skills/canvas-designer/SKILL.md"
+    },
+    {
+      "name": "process-modeler",
+      "file": "skills/process-modeler/SKILL.md"
+    },
+    {
+      "name": "swot-analyst",
+      "file": "skills/swot-analyst/SKILL.md"
     }
   ],
   "processes": [],

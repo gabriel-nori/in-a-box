@@ -2,8 +2,20 @@
   "plugin": "marketing-in-a-box",
   "skills": [
     {
+      "name": "communicator",
+      "file": "skills/communicator/SKILL.md"
+    },
+    {
       "name": "marketer",
       "file": "skills/marketer/SKILL.md"
+    },
+    {
+      "name": "pitcher",
+      "file": "skills/pitcher/SKILL.md"
+    },
+    {
+      "name": "relationship-designer",
+      "file": "skills/relationship-designer/SKILL.md"
     }
   ],
   "processes": [],

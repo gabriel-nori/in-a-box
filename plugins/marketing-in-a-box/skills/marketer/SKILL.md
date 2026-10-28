@@ -28,6 +28,9 @@ See [`docs/skill-dependencies.md`](../../../../docs/skill-dependencies.md) (CONV
 - **Requires:** none.
 - **Optional (enriching):** `business-analyst` (`business-case`): value and market evidence; read it if it has landed, never wait.
 - **Optional (enriching):** `product-owner` (`refined-requirement`): what is actually being shipped; read it if it has landed, never wait.
+- **Optional (enriching):** `swot-analyst` (`swot`): strengths to lead with and threats to answer; read it if it has landed, never wait.
+- **Optional (enriching):** `canvas-designer` (`business-model-canvas`): segments and value propositions; read it if it has landed, never wait.
+- **Optional (enriching):** `communicator` (`communication-guide`): tone and vocabulary for the audience; read it if it has landed, never wait.
 - **Produces:** `positioning`: Audience, promise, proof, channels, and the copy itself.
 
 ## Deliverables

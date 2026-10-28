@@ -323,3 +323,33 @@ Mirror of every `Depends on` section (CONVENTIONS section 3). `scripts/check-con
 | `threat-modeler` | optional-enriching | `infra-engineer` | `environment-notes` |
 | `threat-modeler` | optional-enriching | `legal-counsel` | `legal-notes` |
 | `security-reviewer` | optional-enriching | `threat-modeler` | `threat-model` |
+| `spec-analyst` | optional-enriching | `process-modeler` | `process-model` |
+| `marketer` | optional-enriching | `swot-analyst` | `swot` |
+| `marketer` | optional-enriching | `canvas-designer` | `business-model-canvas` |
+| `marketer` | optional-enriching | `communicator` | `communication-guide` |
+| `communicator` | requires | `none` |  |
+| `communicator` | optional-enriching | `marketer` | `positioning` |
+| `communicator` | optional-enriching | `support-agent` | `support-resolution` |
+| `relationship-designer` | requires | `none` |  |
+| `relationship-designer` | optional-enriching | `communicator` | `communication-guide` |
+| `relationship-designer` | optional-enriching | `support-agent` | `support-resolution` |
+| `pitcher` | requires | `none` |  |
+| `pitcher` | optional-enriching | `swot-analyst` | `swot` |
+| `pitcher` | optional-enriching | `canvas-designer` | `business-model-canvas` |
+| `pitcher` | optional-enriching | `business-analyst` | `business-case` |
+| `pitcher` | optional-enriching | `communicator` | `communication-guide` |
+| `product-owner` | optional-enriching | `canvas-designer` | `business-model-canvas` |
+| `product-owner` | optional-enriching | `process-modeler` | `process-model` |
+| `process-modeler` | requires | `none` |  |
+| `process-modeler` | optional-enriching | `business-analyst` | `business-case` |
+| `process-modeler` | optional-enriching | `canvas-designer` | `business-model-canvas` |
+| `business-analyst` | optional-enriching | `swot-analyst` | `swot` |
+| `business-analyst` | optional-enriching | `canvas-designer` | `business-model-canvas` |
+| `canvas-designer` | requires | `none` |  |
+| `canvas-designer` | optional-enriching | `swot-analyst` | `swot` |
+| `canvas-designer` | optional-enriching | `business-analyst` | `business-case` |
+| `swot-analyst` | requires | `none` |  |
+| `swot-analyst` | optional-enriching | `business-analyst` | `business-case` |
+| `source-researcher` | requires | `none` |  |
+| `skill-integrator` | optional-ordered | `source-researcher` | `research-findings` |
+| `skill-integrator` | requires | `none` |  |

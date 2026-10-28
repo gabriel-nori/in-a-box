@@ -2,8 +2,20 @@
   "plugin": "marketing-in-a-box",
   "skills": [
     {
+      "name": "communicator",
+      "file": "skills/communicator/SKILL.md"
+    },
+    {
       "name": "marketer",
       "file": "skills/marketer/SKILL.md"
+    },
+    {
+      "name": "pitcher",
+      "file": "skills/pitcher/SKILL.md"
+    },
+    {
+      "name": "relationship-designer",
+      "file": "skills/relationship-designer/SKILL.md"
     }
   ],
   "processes": [],
@@ -14,6 +26,27 @@
       "non_negotiable": false,
       "id": "product-positioning-launch",
       "file": "rules/product-positioning-launch.md"
+    },
+    {
+      "scenario": "communication guide, tone of voice, how to write to customers, plain language",
+      "title": "Plain-language communication for a named audience",
+      "non_negotiable": false,
+      "id": "plain-language-communication",
+      "file": "rules/plain-language-communication.md"
+    },
+    {
+      "scenario": "build a pitch, pitch deck outline, present this idea to investors",
+      "title": "Pitch structure: problem to ask, claims sourced",
+      "non_negotiable": false,
+      "id": "pitch-structure",
+      "file": "rules/pitch-structure.md"
+    },
+    {
+      "scenario": "email nurture flow, customer relationship journey, WhatsApp follow-up, LGPD consent, opt-out, B2B outreach",
+      "title": "Relationship flows: legal basis, consent and opt-out, B2C and B2B",
+      "non_negotiable": false,
+      "id": "relationship-consent-and-opt-out",
+      "file": "rules/relationship-consent-and-opt-out.md"
     }
   ]
 }

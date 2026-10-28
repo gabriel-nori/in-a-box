@@ -1,0 +1,19 @@
+{
+  "plugin": "research-in-a-box",
+  "skills": [
+    {
+      "name": "source-researcher",
+      "file": "skills/source-researcher/SKILL.md"
+    }
+  ],
+  "processes": [],
+  "rules": [
+    {
+      "scenario": "research this topic, find sources, enrich this skill, refresh the research, what changed since last time, baseline",
+      "title": "Source grading, read status, baseline and diff",
+      "non_negotiable": false,
+      "id": "source-grading-and-baseline",
+      "file": "rules/source-grading-and-baseline.md"
+    }
+  ]
+}

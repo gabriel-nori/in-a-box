@@ -28,6 +28,7 @@ See [`docs/skill-dependencies.md`](../../../../docs/skill-dependencies.md) (CONV
 - **Requires:** `product-owner` (`refined-requirement`): the product definition the spec is built on.
 - **Optional (enriching):** `security-reviewer` (`threat-notes`): risks the spec must account for; read it if present, never wait.
 - **Optional (enriching):** `infra-engineer` (`environment-notes`): runtime limits the spec must respect; read it if present, never wait.
+- **Optional (enriching):** `process-modeler` (`process-model`): the flow the spec must implement; read it if it has landed, never wait.
 - **Produces:** `technical-spec`: the buildable spec, with gaps and assumptions. `test-plan`: acceptance criteria and the tests that prove them.
 
 ## Deliverables

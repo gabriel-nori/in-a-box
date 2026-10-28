@@ -4,6 +4,18 @@
     {
       "name": "business-analyst",
       "file": "skills/business-analyst/SKILL.md"
+    },
+    {
+      "name": "canvas-designer",
+      "file": "skills/canvas-designer/SKILL.md"
+    },
+    {
+      "name": "process-modeler",
+      "file": "skills/process-modeler/SKILL.md"
+    },
+    {
+      "name": "swot-analyst",
+      "file": "skills/swot-analyst/SKILL.md"
     }
   ],
   "processes": [],
@@ -14,6 +26,27 @@
       "non_negotiable": false,
       "id": "requirements-quality",
       "file": "rules/requirements-quality.md"
+    },
+    {
+      "scenario": "do a SWOT, strengths and weaknesses, assess this idea, opportunities and threats",
+      "title": "SWOT discipline: inside versus outside, evidence, pairing",
+      "non_negotiable": false,
+      "id": "swot-discipline",
+      "file": "rules/swot-discipline.md"
+    },
+    {
+      "scenario": "business model canvas, how does this business earn money, map the business model, value proposition",
+      "title": "Business model canvas: nine blocks, each a hypothesis",
+      "non_negotiable": false,
+      "id": "canvas-as-hypothesis",
+      "file": "rules/canvas-as-hypothesis.md"
+    },
+    {
+      "scenario": "map this process, model the flow, draw BPMN, as-is to-be, mermaid flowchart",
+      "title": "Process model validity: every path ends, every task has an actor",
+      "non_negotiable": false,
+      "id": "process-model-validity",
+      "file": "rules/process-model-validity.md"
     }
   ]
 }

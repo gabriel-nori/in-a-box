@@ -74,6 +74,14 @@ Every process under `plugins/*/processes/` and every rule that came from researc
 | S-060 | The Puppet language style guide (Puppet 7) | Puppet | primary | page | formatting, naming, resources, classes, parameters, modules | https://puppet.com/docs/puppet/7/style_guide |
 | S-061 | Designing system configs: roles and profiles | Puppet | primary | search | the roles and profiles pattern; the page itself was not read | https://help.puppet.com/pe/2023.8/topics/designing_system_configs_roles_and_profiles.htm |
 | S-062 | NIST SP 800-61 Rev. 3, Incident Response Recommendations | NIST | primary | partial | publication record only (April 2025, supersedes Rev. 2); the lessons-learned text was not read | https://csrc.nist.gov/pubs/sp/800/61/r3/final |
+| S-063 | BPMN 2.0.2 | OMG | primary | partial | version and purpose only; the page does not describe gateways, events or flows, and the normative PDF was not read | https://www.omg.org/spec/BPMN/2.0.2/ |
+| S-064 | Mermaid flowchart syntax | mermaid.js.org | primary | page | node shapes, edge labels, subgraphs, validity pitfalls | https://mermaid.js.org/syntax/flowchart.html |
+| S-065 | Lei Geral de Proteção de Dados (Lei 13.709/2018) | Planalto | primary | partial | consent (arts. 5 XII, 8), legal bases (art. 7), legitimate interest (art. 10), data subject rights (art. 18); the last 25,000 characters were not read | https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm |
+| S-066 | The Business Model Canvas | Strategyzer | primary | page | one-page model of one business, a claim to test; the page does not list the nine blocks, which come from the skill's own text | https://www.strategyzer.com/library/the-business-model-canvas |
+| S-067 | Plain language guide | digital.gov | primary | page | four groups: audience, writing, design, testing | https://digital.gov/guides/plain-language |
+| S-068 | CAN-SPAM Act compliance guide for business | FTC | primary | page | eight requirements; no B2B exception | https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business |
+| S-069 | SWOT analysis guides (bank and vendor pages) | various | secondary | search | internal versus external, 2x2, pairing factors, subjectivity, refresh; no single authoritative page | https://www.rbcroyalbank.com/business/pdf/Swot%20template.pdf |
+| S-070 | 10/20/30 rule and the ten slides | Guy Kawasaki, through secondary pages | secondary | search | ten slides, twenty minutes, 30-point font; Kawasaki's own page returned 403 | https://astro.visible.vc/blog/guy-kawasaki-pitch-deck |
 
 ## Tried and not read
 
@@ -88,6 +96,9 @@ Every process under `plugins/*/processes/` and every rule that came from researc
 | https://docs.ansible.com/ansible/latest/tips_tricks/ansible_tips_tricks.html | HTTP 429 | Ansible norms stay as already written in `infra-ansible` |
 | https://threatmodelingmanifesto.org/ | DNS failure on two tries | S-044 rests on a search summary |
 | https://www.pulumi.com/docs/iac/concepts/best-practices/ | HTTP 404 | Pulumi norms rest on S-057 to S-059; community best-practice pages were seen only through search and are not cited |
+| https://guykawasaki.com/the_only_10_slides_you_need_in_your_pitch/ | HTTP 403 | pitch norms rest on the secondary S-070 |
+| https://www.gov.br/anpd/.../guia-orientativo-hipoteses-legais-...-legitimo-interesse.pdf | HTTP 404 | legitimate interest rests on LGPD art. 10 (S-065); ANPD guidance not read |
+| Sequoia Capital's own pitch template | only SEO mirrors found, none citing Sequoia | not cited |
 | https://www.puppet.com/docs/puppet/latest/style_guide.html | 301 to a landing page | the style guide was read at the Puppet 7 URL (S-060) |
 | https://docs.ansible.com/ansible/latest/tips_tricks/sample_setup.html | HTTP 429 | Ansible norms stay as already written in `infra-ansible` |
 | https://doi.org/10.6028/NIST.SP.800-61r3 | not fetched | the lessons-learned guidance of S-062 is not cited |

@@ -33,6 +33,8 @@ Roles ship as parts, and the orchestrator assembles them into flows.
 | `governance-in-a-box` | Governance | `policy-author`, `risk-register`, `controls-auditor`, `decision-steward` | `policy-set`, `risk-register`, `control-findings`, `decision-log` |
 | `release-in-a-box` | Release Manager | `release-manager` | `release-plan` |
 | `dba-in-a-box` | Database Administrator | `dba`, `dba-postgres`, `dba-mysql`, `dba-sqlserver` | `query-review` |
+| `research-in-a-box` | Source Researcher | `source-researcher` | `research-findings` |
+| `curator-in-a-box` | Skill Integrator | `skill-integrator` | `integration-report` |
 | `orchestrator-in-a-box` | Flow composer and runner | `compose-flow`, `run-flow`, `process-to-command` | flows, run records |
 
 ## Processes, not commands

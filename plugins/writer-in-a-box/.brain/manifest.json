@@ -1,0 +1,27 @@
+{
+  "plugin": "writer-in-a-box",
+  "skills": [
+    {
+      "name": "carousel-writer",
+      "file": "skills/carousel-writer/SKILL.md"
+    },
+    {
+      "name": "post-writer",
+      "file": "skills/post-writer/SKILL.md"
+    },
+    {
+      "name": "tone-of-voice",
+      "file": "skills/tone-of-voice/SKILL.md"
+    }
+  ],
+  "processes": [],
+  "rules": [
+    {
+      "scenario": "post with text and images, carousel script, hand text to the designer",
+      "title": "The script is the contract between text and art",
+      "non_negotiable": false,
+      "id": "script-is-the-contract-between-text-and-art",
+      "file": "rules/script-is-the-contract-between-text-and-art.md"
+    }
+  ]
+}

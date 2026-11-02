@@ -368,3 +368,22 @@ Mirror of every `Depends on` section (CONVENTIONS section 3). `scripts/check-con
 | `application-tracker` | requires | `none` |  |
 | `application-tracker` | optional-enriching | `job-scout` | `shortlist` |
 | `application-tracker` | optional-enriching | `application-mailer` | `mail-draft` |
+| `design-foundations` | requires | `none` |  |
+| `post-designer` | requires | `none` |  |
+| `post-designer` | optional-ordered | `carousel-writer` | `post-script` |
+| `post-designer` | optional-enriching | `tone-of-voice` | `tone-guide` |
+| `post-designer` | optional-enriching | `design-foundations` | `design-rules` |
+| `post-designer` | optional-enriching | `design-reviewer` | `design-review` |
+| `art-renderer` | requires | `post-designer` | `art-spec` |
+| `art-renderer` | optional-ordered | `image-generator` | `image-assets` |
+| `image-generator` | requires | `post-designer` | `art-spec` |
+| `design-reviewer` | requires | `art-renderer` | `post-art` |
+| `design-reviewer` | optional-enriching | `design-foundations` | `design-rules` |
+| `tone-of-voice` | requires | `none` |  |
+| `tone-of-voice` | optional-enriching | `communicator` | `communication-guide` |
+| `post-writer` | requires | `none` |  |
+| `post-writer` | optional-ordered | `tone-of-voice` | `tone-guide` |
+| `post-writer` | optional-enriching | `marketer` | `positioning` |
+| `carousel-writer` | requires | `none` |  |
+| `carousel-writer` | optional-ordered | `tone-of-voice` | `tone-guide` |
+| `carousel-writer` | optional-enriching | `marketer` | `positioning` |

@@ -31,6 +31,8 @@ Roles ship as parts, and the orchestrator assembles them into flows.
 | `finops-in-a-box` | FinOps | `cost-estimator`, `budget-planner`, `cost-monitor` | `cost-estimate`, `budget-plan`, `cost-findings` |
 | `disaster-recovery-in-a-box` | Disaster Recovery | `dr-planner`, `continuity-standards`, `dr-tester` | `dr-plan`, `continuity-compliance`, `dr-test-report` |
 | `governance-in-a-box` | Governance | `policy-author`, `risk-register`, `controls-auditor`, `decision-steward` | `policy-set`, `risk-register`, `control-findings`, `decision-log` |
+| `designer-in-a-box` | Designer | `design-foundations`, `post-designer`, `art-renderer`, `image-generator`, `design-reviewer` | `design-rules`, `art-spec`, `post-art`, `image-assets`, `design-review` |
+| `writer-in-a-box` | Writer | `tone-of-voice`, `post-writer`, `carousel-writer` | `tone-guide`, `post-copy`, `post-script` |
 | `release-in-a-box` | Release Manager | `release-manager` | `release-plan` |
 | `dba-in-a-box` | Database Administrator | `dba`, `dba-postgres`, `dba-mysql`, `dba-sqlserver` | `query-review` |
 | `research-in-a-box` | Source Researcher | `source-researcher` | `research-findings` |

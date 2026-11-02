@@ -1,0 +1,11 @@
+{
+  "format": "portrait",
+  "tokens": {"bg": "#12122b", "fg": "#f4f4ff", "accent": "#6ee7c8", "base_font": 38, "padding": 90},
+  "slides": [
+    {"layout": "cover", "kicker": "AI · MEMORY", "title": "The model changes. The memory doesn't.", "subtitle": "Why context belongs to you."},
+    {"layout": "list", "title": "Why it works", "items": ["The chat carries no history.", "Every call is independent.", "Context lives in a graph."]},
+    {"layout": "compare", "title": "Before and after", "left": "Before", "right": "After", "items": ["Context inside the chat", "Switching meant starting over", "Context in your brain", "Any model, same memory"]},
+    {"layout": "numbers", "title": "Today's numbers", "items": [{"number": "1,890", "label": "nodes"}, {"number": "2,539", "label": "edges"}]},
+    {"layout": "cta", "title": "Which provider do you depend on?", "body": "Open source, link in the comments.", "action": "Follow for the next post"}
+  ]
+}

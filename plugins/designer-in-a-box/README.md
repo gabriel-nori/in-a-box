@@ -7,6 +7,6 @@ Skills: [`design-foundations`](skills/design-foundations/SKILL.md) produces `des
 Scripts (need Python 3 and Chrome):
 
 - `scripts/render-art.py <art-spec.json> <out-dir>`: validates the spec, renders one PNG per slide and writes `manifest.json`. `--check-only` validates only. Example spec: `examples/art-spec.json`.
-- `scripts/generate-image.py <art-spec.json> <out-dir>`: dry run writes `image-requests.json` and a hash. Sending needs `--send --provider <name> --authorize <hash>`. A provider is a JSON adapter `{"command": [...]}` in `~/.in-a-box/image-providers/`; none is built in.
+- `scripts/generate-image.py <art-spec.json> <out-dir>`: dry run writes `image-requests.json` and a hash. Sending needs `--send --provider <name> --authorize <hash>`. A provider is a JSON adapter `{"command": [...]}` in `~/.in-a-box/image-providers/`; none is built in. `providers/gemini.py` is a Gemini adapter: copy `providers/gemini.json` to `~/.in-a-box/image-providers/`, replace `<path-to>`, and set `GEMINI_API_KEY` (or `~/.in-a-box/secrets/gemini.key`). Not yet run against the live API.
 
 Planned: `ux-designer`, `ui-designer`, `brand-designer`, `web-designer`, `app-designer`.

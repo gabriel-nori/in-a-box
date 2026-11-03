@@ -1,19 +1,16 @@
 #!/usr/bin/env python3
-"""Turn the generate slots of an art-spec into diffusion requests: generate-image.py <art-spec.json> <out-dir> [--send --provider NAME --authorize HASH]
+"""Turn the generate slots of an art-spec into image requests, as text: generate-image.py <art-spec.json> <out-dir> [--attach IMAGES-DIR --by NAME]
 
-Default is a dry run: writes <out-dir>/image-requests.json (the whole piece the model would receive) and prints its hash.
-Sending is an outward action. It needs --send, --provider and --authorize <hash> where the hash is the one printed for
-exactly that file, so approval of one request set never covers another. A provider is a JSON file
-(~/.in-a-box/image-providers/<name>.json, or $IN_A_BOX_IMAGE_PROVIDERS/<name>.json) with {"command": [...]}: the command
-receives one request as JSON on stdin and prints the path of the PNG it wrote. No provider API is built in.
-Writes <out-dir>/art-spec.resolved.json (assets filled in) and <out-dir>/image-assets.json."""
+Knows no image service and calls none. Step 1 writes <out-dir>/image-requests.json (the whole piece a model would
+receive), <out-dir>/image-brief.md (the same as plain text to hand to any LLM or image model) and prints the request hash.
+Whoever runs the brain gets the images made elsewhere (and owns the approval for that outward step), then
+step 2, --attach IMAGES-DIR --by NAME, expects IMAGES-DIR/<slot>.png for every request, copies them in, and writes
+<out-dir>/art-spec.resolved.json (assets filled in) and <out-dir>/image-assets.json (slot, maker, request hash)."""
 import copy
 import hashlib
 import json
-import os
 import pathlib
 import re
-import subprocess
 import sys
 
 ALLOWED = ("slot", "prompt", "negative", "style", "aspect", "seed")
@@ -44,8 +41,8 @@ def requests(spec):
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     opt = lambda n: sys.argv[sys.argv.index(n) + 1] if n in sys.argv else None
-    prov, auth = opt("--provider"), opt("--authorize")
-    for v in (prov, auth):
+    by, att = opt("--by"), opt("--attach")
+    for v in (by, att):
         if v in args:
             args.remove(v)
     if len(args) != 2:
@@ -60,25 +57,23 @@ def main():
     (out / "image-requests.json").write_text(blob, encoding="utf-8")
     digest = hashlib.sha256(blob.encode()).hexdigest()[:16]
     print(f"{len(reqs)} request(s) written; hash {digest}")
-    if "--send" not in sys.argv:
-        print("dry run: nothing left this machine")
+    brief = "\n\n".join(
+        f"## {r['slot']} ({r['aspect']})\n{r['prompt']}\nStyle: {r.get('style', '-')}\nAvoid: {r['negative']}\nSeed: {r.get('seed', '-')}\nNo lettering in the image." for r in reqs)
+    (out / "image-brief.md").write_text(f"# Image requests, hash {digest}\n\nOne PNG per section, named <slot>.png.\n\n{brief}\n", encoding="utf-8")
+    if not att:
+        print("requests only: nothing left this machine; hand image-brief.md to an image model, then re-run with --attach")
         return
-    if not prov or auth != digest:
-        sys.exit("refused: --send needs --provider and --authorize with the hash of this exact request set")
-    base = [os.environ.get("IN_A_BOX_IMAGE_PROVIDERS"), os.path.expanduser("~/.in-a-box/image-providers")]
-    cfg = next((pathlib.Path(b) / f"{prov}.json" for b in base if b and (pathlib.Path(b) / f"{prov}.json").exists()), None)
-    if not cfg:
-        sys.exit(f"provider '{prov}' not found")
-    cmd = json.loads(cfg.read_text(encoding="utf-8"))["command"]
+    if not by:
+        sys.exit("--attach needs --by NAME (who made the images), recorded as provenance")
+    missing = [r["slot"] for r in reqs if not (pathlib.Path(att) / f"{r['slot']}.png").exists()]
+    if missing:
+        sys.exit(f"missing images for: {', '.join(missing)}")
     resolved, assets = copy.deepcopy(spec), []
     for r in reqs:
-        body = {k: v for k, v in r.items() if not k.startswith("_")}
-        p = subprocess.run(cmd, input=json.dumps(body), capture_output=True, text=True, check=True)
-        src = pathlib.Path(p.stdout.strip().splitlines()[-1])
         dst = out / f"{r['slot']}.png"
-        dst.write_bytes(src.read_bytes())
+        dst.write_bytes((pathlib.Path(att) / dst.name).read_bytes())
         resolved["slides"][r["_slide"] - 1]["image"]["asset"] = str(dst)
-        assets.append({"slot": r["slot"], "file": dst.name, "provider": prov, "request_hash": digest})
+        assets.append({"slot": r["slot"], "file": dst.name, "provider": by, "request_hash": digest})
     (out / "art-spec.resolved.json").write_text(json.dumps(resolved, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     (out / "image-assets.json").write_text(json.dumps(assets, indent=2) + "\n", encoding="utf-8")
     print(f"generated {len(assets)} image(s); provenance in image-assets.json")

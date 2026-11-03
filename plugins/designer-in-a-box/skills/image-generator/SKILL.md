@@ -15,7 +15,7 @@ Standalone, when the person wants a model-generated image for a piece. Inside a 
 ## Given
 - **Primary:** the `art-spec`, with a generate block per image slot (prompt, style, aspect, negative, seed).
 - **Supporting:** the provider the owner names.
-- **Context, not procedure:** the tool is `plugins/designer-in-a-box/scripts/generate-image.py`. Without `--send` it writes `image-requests.json` and prints a hash, and nothing leaves the machine. Sending needs `--send --provider <name> --authorize <hash>`, the hash being the one printed for that exact file. A provider is a JSON adapter in `~/.in-a-box/image-providers/`; `providers/gemini.py` is the one shipped.
+- **Context, not procedure:** the tool is `plugins/designer-in-a-box/scripts/generate-image.py`. Without `--send` it writes `image-requests.json` and prints a hash, and nothing leaves the machine. Sending needs `--send --provider <name> --authorize <hash>`, the hash being the one printed for that exact file. A provider is a JSON adapter in `~/.in-a-box/image-providers/`; `providers/gemini.py` and `providers/huggingface.py` are shipped. The Hugging Face adapter uses an existing diffusion model on a Space; `huggingface.py spaces` lists the ones running now at no cost, and the owner names the Space (`$HF_SPACE`).
 
 If a required input is missing, say so and work from what remains. Never invent the missing input.
 

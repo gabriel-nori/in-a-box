@@ -29,7 +29,7 @@ Root of the brain import. Read this first, then each plugin's `.brain/MAP.md`.
 | `finops-in-a-box` | 3 | `budget-plan`, `cost-estimate`, `cost-findings` |
 | `governance-in-a-box` | 4 | `control-findings`, `decision-log`, `policy-set`, `risk-register` |
 | `infra-in-a-box` | 6 | `environment-notes` |
-| `jobsearch-in-a-box` | 7 | `application-board`, `cover-letter`, `mail-draft`, `requirement-match`, `shortlist`, `tailored-cv`, `verified-profile` |
+| `jobsearch-in-a-box` | 8 | `application-board`, `ats-report`, `cover-letter`, `mail-draft`, `requirement-match`, `shortlist`, `tailored-cv`, `verified-profile` |
 | `lawyer-in-a-box` | 1 | `legal-notes` |
 | `marketing-in-a-box` | 4 | `communication-guide`, `pitch`, `positioning`, `relationship-flow` |
 | `model-router-in-a-box` | 1 | `model-assignment` |
@@ -49,7 +49,7 @@ Root of the brain import. Read this first, then each plugin's `.brain/MAP.md`.
 0. `agile-facilitator`, `agile-metrics`, `application-tracker`, `architect-aws`, `architect-azure`, `architect-gcp`, `architect-proxmox`, `architect-vmware`, `backlog-prioritizer`, `blender-print-prep`, `budget-planner`, `business-analyst`, `canvas-designer`, `code-reviewer-iac`, `communicator`, `compose-flow`, `continuity-standards`, `controls-auditor`, `cost-estimator`, `cost-monitor`, `dba`, `dba-mysql`, `dba-postgres`, `dba-sqlserver`, `decision-steward`, `design-foundations`, `dr-planner`, `dr-tester`, `estimator`, `facilitate-daily`, `facilitate-planning`, `facilitate-refinement`, `facilitate-retro`, `incident-commander`, `infra-ansible`, `infra-cloudformation`, `infra-engineer`, `infra-pulumi`, `infra-puppet`, `infra-terraform`, `issue-writer`, `job-profile`, `legal-counsel`, `marketer`, `model-router`, `observability-engineer`, `observability-reader`, `pitcher`, `policy-author`, `postmortem-defect`, `postmortem-security`, `process-modeler`, `process-to-command`, `product-owner`, `relationship-designer`, `risk-register`, `solution-architect`, `source-researcher`, `support-agent`, `swot-analyst`, `threat-modeler`, `tone-of-voice`, `working-agreements`
 1. `carousel-writer`, `code-reviewer-sql`, `job-scout`, `post-writer`, `posting-analyst`, `postmortem-author`, `run-flow`, `skill-integrator`, `spec-analyst`
 2. `code-reviewer-android`, `code-reviewer-java`, `code-reviewer-python`, `code-reviewer-react`, `cover-letter-writer`, `cv-tailor`, `post-designer`, `tech-lead`
-3. `application-mailer`, `developer`, `developer-android`, `developer-java`, `developer-python`, `developer-react`, `developer-sql`, `image-generator`
+3. `application-mailer`, `ats-checker`, `developer`, `developer-android`, `developer-java`, `developer-python`, `developer-react`, `developer-sql`, `image-generator`
 4. `art-renderer`, `code-reviewer`, `qa-tester`, `security-reviewer`
 5. `acceptance-reviewer`, `design-reviewer`
 6. `changelog-keeper`, `documenter`, `release-manager`

@@ -2,13 +2,15 @@
 
 Role: **Job-search assistant**. Accountable for finding fitting vacancies, comparing each honestly against the candidate, drafting documents that claim only true facts, and tracking every application to its outcome. It drafts and never sends.
 
-Skills: [`job-profile`](skills/job-profile/SKILL.md) produces `verified-profile`; [`job-scout`](skills/job-scout/SKILL.md) produces `shortlist`; [`posting-analyst`](skills/posting-analyst/SKILL.md) produces `requirement-match`; [`cv-tailor`](skills/cv-tailor/SKILL.md) produces `tailored-cv`; [`cover-letter-writer`](skills/cover-letter-writer/SKILL.md) produces `cover-letter`; [`application-mailer`](skills/application-mailer/SKILL.md) produces `mail-draft`; [`application-tracker`](skills/application-tracker/SKILL.md) produces `application-board`.
+Skills: [`job-profile`](skills/job-profile/SKILL.md) produces `verified-profile`; [`job-scout`](skills/job-scout/SKILL.md) produces `shortlist`; [`posting-analyst`](skills/posting-analyst/SKILL.md) produces `requirement-match`; [`cv-tailor`](skills/cv-tailor/SKILL.md) produces `tailored-cv`; [`ats-checker`](skills/ats-checker/SKILL.md) produces `ats-report`; [`cover-letter-writer`](skills/cover-letter-writer/SKILL.md) produces `cover-letter`; [`application-mailer`](skills/application-mailer/SKILL.md) produces `mail-draft`; [`application-tracker`](skills/application-tracker/SKILL.md) produces `application-board`.
 
 Script (Python 3, standard library, no network): `scripts/jobkit.py`
 - `guard --draft F --source F...`: names, numbers and credentials in a draft that no source backs; exit 2 if any.
 - `years ROLES.json`: years of experience with overlapping roles counted once.
 - `band SCORE`: the fit band.
 - `dedupe POSTINGS.json [--seen SEEN.json]`: drops postings seen before and the same job twice.
+- `normalize FILE`: repairs ligature glyphs (ﬁ, ﬂ), soft hyphens and zero-width marks in a text.
+- `ats (--pdf F | --docx F | --text F) [--keywords K.json] [--source-text F] [--filename N] [--min-coverage N]`: readability and keyword-coverage report for a resume; exit 2 on a parse error. A PDF needs `pdftotext` or `pypdf` installed.
 
 The profile is personal and lives in the owner's brain, never in this repo.
 

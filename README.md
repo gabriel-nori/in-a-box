@@ -37,7 +37,7 @@ Roles ship as parts, and the orchestrator assembles them into flows.
 | `dba-in-a-box` | Database Administrator | `dba`, `dba-postgres`, `dba-mysql`, `dba-sqlserver` | `query-review` |
 | `research-in-a-box` | Source Researcher | `source-researcher` | `research-findings` |
 | `curator-in-a-box` | Skill Integrator | `skill-integrator` | `integration-report` |
-| `jobsearch-in-a-box` | Job-search assistant | `job-profile`, `job-scout`, `posting-analyst`, `cv-tailor`, `cover-letter-writer`, `application-mailer`, `application-tracker` | `verified-profile`, `shortlist`, `requirement-match`, `tailored-cv`, `cover-letter`, `mail-draft`, `application-board` |
+| `jobsearch-in-a-box` | Job-search assistant | `job-profile`, `job-scout`, `posting-analyst`, `cv-tailor`, `ats-checker`, `cover-letter-writer`, `application-mailer`, `application-tracker` | `verified-profile`, `shortlist`, `requirement-match`, `tailored-cv`, `ats-report`, `cover-letter`, `mail-draft`, `application-board` |
 | `orchestrator-in-a-box` | Flow composer and runner | `compose-flow`, `run-flow`, `process-to-command` | flows, run records |
 
 ## Processes, not commands

@@ -10,6 +10,10 @@
       "file": "skills/application-tracker/SKILL.md"
     },
     {
+      "name": "ats-checker",
+      "file": "skills/ats-checker/SKILL.md"
+    },
+    {
       "name": "cover-letter-writer",
       "file": "skills/cover-letter-writer/SKILL.md"
     },
@@ -59,6 +63,13 @@
       "non_negotiable": false,
       "id": "fit-score-is-explained-and-fair",
       "file": "rules/fit-score-is-explained-and-fair.md"
+    },
+    {
+      "scenario": "optimise resume for ATS, keyword score, resume parsing, ATS checker, hidden keywords",
+      "title": "ATS work fixes readability and shows true terms; it never adds claims or hides text",
+      "non_negotiable": true,
+      "id": "ats-readability-not-keyword-stuffing",
+      "file": "rules/ats-readability-not-keyword-stuffing.md"
     }
   ]
 }

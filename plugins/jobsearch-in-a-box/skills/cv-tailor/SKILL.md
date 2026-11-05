@@ -15,7 +15,7 @@ Standalone, for one posting. In a flow, after the requirement match, in parallel
 ## Given
 - **Primary:** the requirement match, and the verified profile.
 - **Supporting:** facts the candidate gives for this application, tone and language, a page limit (one or two), and the owner's standing CV conventions.
-- **Context, not procedure:** `scripts/jobkit.py guard --draft <resume> --source <profile> --source <posting>` lists names, numbers and credentials the sources do not back (exit 2 if any).
+- **Context, not procedure:** `scripts/jobkit.py normalize <resume>` repairs ligatures and invisible marks before export. `scripts/jobkit.py guard --draft <resume> --source <profile> --source <posting>` lists names, numbers and credentials the sources do not back (exit 2 if any).
 
 If a required input is missing, say so and work from what remains. Never invent it.
 
@@ -30,7 +30,10 @@ See [`docs/skill-dependencies.md`](../../../../docs/skill-dependencies.md) (CONV
 
 ## Deliverables
 - **Tailored by choice.** Summary, bullets and skills are selected and ordered for this job; each bullet is one line and starts with a verb. Every role and project of the profile is present.
-- **Own skills only.** The skills section lists the profile's skills, most relevant first, spelled as in the profile.
+- **Own skills only.** The skills section lists the profile's skills, most relevant first, spelled as in the profile, grouped in a few headings and not repeated from the roles.
+- **Technologies per role.** Each role ends with one line, in the resume's language ("Principais tecnologias", "Key technologies"), naming only tools the profile ties to that role. A term the posting wants shows up in context there, in the summary or in a bullet, never only in the skills list.
+- **Parsable by design.** One column, no tables, text boxes or decorative bullets, standard section headings, name and contact in the body, one date range per role, and acronyms beside the spelled-out term. Ligatures are repaired in the source (`jobkit.py normalize`) before export.
+- **File names.** Name-Role-Company.pdf with selectable text, plus a DOCX when a portal rejects PDF. The `ats-checker` reads the exported file.
 - **Gaps stay gaps.** A requirement the profile does not back is left out of the resume and reported as a gap, even when the posting's keyword would help.
 - **Real status kept.** In-progress credentials say in progress.
 - **Numbers only if real.** A result takes the form achieved X, measured by Y, by doing Z only when the number exists.
@@ -46,6 +49,7 @@ The output is correct when a reader who never saw the work can confirm, from the
 
 ## Guardrails: must not
 - **Must not add an employer, title, date, number, tool, degree or award the sources do not show.** Prevents: a resume that fails an interview.
+- **Must not add a technology to a role line because the posting wants it.** Prevents: a role that claims a tool it never used.
 - **Must not edit a citation or publication the candidate wrote.** Prevents: altered authorship.
 - **Must not loosen the guard to make it pass.** Prevents: a clean report over a false claim.
 - **Must not send or upload the resume anywhere.** Prevents: an outward move the owner did not approve.

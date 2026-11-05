@@ -360,6 +360,8 @@ Mirror of every `Depends on` section (CONVENTIONS section 3). `scripts/check-con
 | `posting-analyst` | requires | `job-profile` | `verified-profile` |
 | `cv-tailor` | requires | `posting-analyst` | `requirement-match` |
 | `cv-tailor` | requires | `job-profile` | `verified-profile` |
+| `ats-checker` | requires | `cv-tailor` | `tailored-cv` |
+| `ats-checker` | requires | `posting-analyst` | `requirement-match` |
 | `cover-letter-writer` | requires | `posting-analyst` | `requirement-match` |
 | `cover-letter-writer` | requires | `job-profile` | `verified-profile` |
 | `cover-letter-writer` | optional-enriching | `cv-tailor` | `tailored-cv` |

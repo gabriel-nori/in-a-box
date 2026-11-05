@@ -122,7 +122,7 @@
     {
       "name": "blender-in-a-box",
       "source": "./plugins/blender-in-a-box",
-      "description": "blender role."
+      "description": "Print-ready 3D meshes: audited against a print profile, repaired where it fails, exported as STL in millimetres, with a one-pass headless Blender pipeline."
     },
     {
       "name": "jobsearch-in-a-box",

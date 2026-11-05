@@ -1,0 +1,28 @@
+name: content-to-print
+description: A voice guide and a post script become an art spec, the art is generated behind a human gate, rendered and reviewed, and the same art spec feeds a print-ready mesh for a physical piece.
+nodes:
+  - id: voice
+    skill: tone-of-voice
+  - id: script
+    skill: carousel-writer
+    after: [voice]
+  - id: design
+    skill: post-designer
+    after: [script]
+  - id: images
+    skill: image-generator
+    after: [design]
+    gate: human                    # an image service is outward: the owner approves the exact requests
+  - id: render
+    skill: art-renderer
+    after: [images]
+  - id: review
+    skill: design-reviewer
+    after: [render]
+    on_reject:                     # findings go back to the designer, which reads design-review
+      to: design
+      max_iterations: 2
+  - id: mesh
+    skill: blender-print-prep      # carries the logo or embossed art from the art spec
+    after: [design]
+    gate: human                    # starting a physical print is irreversible

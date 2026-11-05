@@ -1,0 +1,42 @@
+{
+  "plugin": "designer-in-a-box",
+  "skills": [
+    {
+      "name": "art-renderer",
+      "file": "skills/art-renderer/SKILL.md"
+    },
+    {
+      "name": "design-foundations",
+      "file": "skills/design-foundations/SKILL.md"
+    },
+    {
+      "name": "design-reviewer",
+      "file": "skills/design-reviewer/SKILL.md"
+    },
+    {
+      "name": "image-generator",
+      "file": "skills/image-generator/SKILL.md"
+    },
+    {
+      "name": "post-designer",
+      "file": "skills/post-designer/SKILL.md"
+    }
+  ],
+  "processes": [],
+  "rules": [
+    {
+      "scenario": "design a post, carousel, banner, cover, render the art, check contrast and layout",
+      "title": "A designed piece is a spec rendered by code",
+      "non_negotiable": false,
+      "id": "art-is-specified-not-drawn",
+      "file": "rules/art-is-specified-not-drawn.md"
+    },
+    {
+      "scenario": "generate an image with a model, diffusion, illustration, hero image, text to image",
+      "title": "Generated images need an approval bound to the exact request",
+      "non_negotiable": true,
+      "id": "generated-images-need-a-gate",
+      "file": "rules/generated-images-need-a-gate.md"
+    }
+  ]
+}

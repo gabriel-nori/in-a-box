@@ -1,0 +1,13 @@
+{
+  "name": "writer-in-a-box",
+  "version": "0.1.0",
+  "description": "Writer role: tone of voice, post text and carousel scripts.",
+  "author": {
+    "name": "Gabriel Almilhatti"
+  },
+  "keywords": [
+    "in-a-box",
+    "role",
+    "writer"
+  ]
+}

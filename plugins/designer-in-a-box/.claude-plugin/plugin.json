@@ -1,0 +1,13 @@
+{
+  "name": "designer-in-a-box",
+  "version": "0.1.0",
+  "description": "Designer role: post art specified as a spec and rendered by code, optional diffusion images behind a gate.",
+  "author": {
+    "name": "Gabriel Almilhatti"
+  },
+  "keywords": [
+    "in-a-box",
+    "role",
+    "designer"
+  ]
+}

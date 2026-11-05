@@ -1,0 +1,13 @@
+{
+  "name": "blender-in-a-box",
+  "version": "0.1.0",
+  "description": "blender role.",
+  "author": {
+    "name": "Gabriel Almilhatti"
+  },
+  "keywords": [
+    "in-a-box",
+    "role",
+    "blender"
+  ]
+}

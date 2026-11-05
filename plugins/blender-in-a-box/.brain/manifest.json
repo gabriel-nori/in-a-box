@@ -1,0 +1,11 @@
+{
+  "plugin": "blender-in-a-box",
+  "skills": [
+    {
+      "name": "blender-print-prep",
+      "file": "skills/blender-print-prep/SKILL.md"
+    }
+  ],
+  "processes": [],
+  "rules": []
+}

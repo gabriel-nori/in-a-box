@@ -18,6 +18,7 @@ Root of the brain import. Read this first, then each plugin's `.brain/MAP.md`.
 |---|---|---|
 | `agile-in-a-box` | 10 | `agile-charts`, `ceremony-notes`, `estimate`, `prioritized-backlog`, `ready-issue`, `working-agreements` |
 | `architect-in-a-box` | 6 | `architecture-design` |
+| `blender-in-a-box` | 1 | `print-ready-mesh` |
 | `business-in-a-box` | 4 | `business-case`, `business-model-canvas`, `process-model`, `swot` |
 | `curator-in-a-box` | 1 | `integration-report` |
 | `dba-in-a-box` | 4 | `query-review` |
@@ -42,7 +43,7 @@ Root of the brain import. Read this first, then each plugin's `.brain/MAP.md`.
 
 ## Layers (execution order from Requires and Optional-ordered edges)
 
-0. `agile-facilitator`, `agile-metrics`, `architect-aws`, `architect-azure`, `architect-gcp`, `architect-proxmox`, `architect-vmware`, `backlog-prioritizer`, `budget-planner`, `business-analyst`, `canvas-designer`, `code-reviewer-iac`, `communicator`, `compose-flow`, `continuity-standards`, `controls-auditor`, `cost-estimator`, `cost-monitor`, `dba`, `dba-mysql`, `dba-postgres`, `dba-sqlserver`, `decision-steward`, `dr-planner`, `dr-tester`, `estimator`, `facilitate-daily`, `facilitate-planning`, `facilitate-refinement`, `facilitate-retro`, `incident-commander`, `infra-ansible`, `infra-cloudformation`, `infra-engineer`, `infra-pulumi`, `infra-puppet`, `infra-terraform`, `issue-writer`, `legal-counsel`, `marketer`, `model-router`, `observability-engineer`, `observability-reader`, `pitcher`, `policy-author`, `postmortem-defect`, `postmortem-security`, `process-modeler`, `process-to-command`, `product-owner`, `relationship-designer`, `risk-register`, `solution-architect`, `source-researcher`, `support-agent`, `swot-analyst`, `threat-modeler`, `working-agreements`
+0. `agile-facilitator`, `agile-metrics`, `architect-aws`, `architect-azure`, `architect-gcp`, `architect-proxmox`, `architect-vmware`, `backlog-prioritizer`, `blender-print-prep`, `budget-planner`, `business-analyst`, `canvas-designer`, `code-reviewer-iac`, `communicator`, `compose-flow`, `continuity-standards`, `controls-auditor`, `cost-estimator`, `cost-monitor`, `dba`, `dba-mysql`, `dba-postgres`, `dba-sqlserver`, `decision-steward`, `dr-planner`, `dr-tester`, `estimator`, `facilitate-daily`, `facilitate-planning`, `facilitate-refinement`, `facilitate-retro`, `incident-commander`, `infra-ansible`, `infra-cloudformation`, `infra-engineer`, `infra-pulumi`, `infra-puppet`, `infra-terraform`, `issue-writer`, `legal-counsel`, `marketer`, `model-router`, `observability-engineer`, `observability-reader`, `pitcher`, `policy-author`, `postmortem-defect`, `postmortem-security`, `process-modeler`, `process-to-command`, `product-owner`, `relationship-designer`, `risk-register`, `solution-architect`, `source-researcher`, `support-agent`, `swot-analyst`, `threat-modeler`, `working-agreements`
 1. `code-reviewer-sql`, `postmortem-author`, `run-flow`, `skill-integrator`, `spec-analyst`
 2. `code-reviewer-android`, `code-reviewer-java`, `code-reviewer-python`, `code-reviewer-react`, `tech-lead`
 3. `developer`, `developer-android`, `developer-java`, `developer-python`, `developer-react`, `developer-sql`

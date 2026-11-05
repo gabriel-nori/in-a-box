@@ -65,6 +65,7 @@ Every skill declares what must be true when it finishes and which constraints it
 ```
 python3 scripts/check-contracts.py            # validate every skill against the contract shape
 python3 scripts/new-plugin.py <role> <skill>  # scaffold a new role plugin
+python3 -m unittest discover -s tests -v   # script tests (jobkit, render-art, generate-image)
 ```
 
 Try it locally:

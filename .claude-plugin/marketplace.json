@@ -123,6 +123,11 @@
       "name": "blender-in-a-box",
       "source": "./plugins/blender-in-a-box",
       "description": "blender role."
+    },
+    {
+      "name": "jobsearch-in-a-box",
+      "source": "./plugins/jobsearch-in-a-box",
+      "description": "Job-search assistant: verified profile, scored shortlist, posting match, tailored CV and letter behind a fact guard, application board."
     }
   ]
 }

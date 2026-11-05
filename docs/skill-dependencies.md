@@ -353,3 +353,18 @@ Mirror of every `Depends on` section (CONVENTIONS section 3). `scripts/check-con
 | `source-researcher` | requires | `none` |  |
 | `skill-integrator` | optional-ordered | `source-researcher` | `research-findings` |
 | `skill-integrator` | requires | `none` |  |
+| `blender-print-prep` | requires | `none` |  |
+| `blender-print-prep` | optional-enriching | `post-designer` | `art-spec` |
+| `job-profile` | requires | `none` |  |
+| `job-scout` | requires | `job-profile` | `verified-profile` |
+| `posting-analyst` | requires | `job-profile` | `verified-profile` |
+| `cv-tailor` | requires | `posting-analyst` | `requirement-match` |
+| `cv-tailor` | requires | `job-profile` | `verified-profile` |
+| `cover-letter-writer` | requires | `posting-analyst` | `requirement-match` |
+| `cover-letter-writer` | requires | `job-profile` | `verified-profile` |
+| `cover-letter-writer` | optional-enriching | `cv-tailor` | `tailored-cv` |
+| `application-mailer` | requires | `cover-letter-writer` | `cover-letter` |
+| `application-mailer` | optional-enriching | `application-tracker` | `application-board` |
+| `application-tracker` | requires | `none` |  |
+| `application-tracker` | optional-enriching | `job-scout` | `shortlist` |
+| `application-tracker` | optional-enriching | `application-mailer` | `mail-draft` |

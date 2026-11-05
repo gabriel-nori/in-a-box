@@ -1,0 +1,13 @@
+{
+  "name": "jobsearch-in-a-box",
+  "version": "0.1.0",
+  "description": "Job-search assistant: verified profile, scored shortlist, tailored CV and letter behind a fact guard, application board.",
+  "author": {
+    "name": "Gabriel Almilhatti"
+  },
+  "keywords": [
+    "in-a-box",
+    "role",
+    "jobsearch"
+  ]
+}

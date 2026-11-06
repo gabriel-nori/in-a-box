@@ -2,7 +2,7 @@
 
 A set of role plugins for Claude Code, plus an orchestrator that connects them on demand.
 
-Status: private, skeleton (v0.1.0). Not yet published.
+Status: public, early (v0.1.0). Expect rough edges and changes between versions.
 
 ## Idea
 
@@ -68,7 +68,14 @@ python3 scripts/new-plugin.py <role> <skill>  # scaffold a new role plugin
 python3 -m unittest discover -s tests -v   # script tests (jobkit, render-art, generate-image)
 ```
 
-Try it locally:
+Install from GitHub:
+
+```
+claude plugin marketplace add gabriel-nori/in-a-box
+claude plugin install dev-in-a-box@in-a-box
+```
+
+Or try it from a local clone:
 
 ```
 claude plugin marketplace add ./

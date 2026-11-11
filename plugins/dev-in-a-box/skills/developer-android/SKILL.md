@@ -38,6 +38,8 @@ See [`docs/skill-dependencies.md`](../../../../docs/skill-dependencies.md) (CONV
 - **Verification.** Tests that prove each acceptance criterion of the unit exist and pass; the command that ran them is named.
 - **Run instructions.** The summary states how to start the result and where it listens, in terms a tester with no source access can follow.
 - **Contract feedback.** Any contract that cannot be honoured is reported as a contract-change request in the summary, not worked around.
+- **Test-first evidence.** Each acceptance criterion has a test that was seen failing before the code that satisfies it, and the summary names that failing run; a test that still passes when the code returns nothing is not evidence.
+- **Commit history.** The branch holds small commits in a reading order, each stating why, what and how it was verified (see the `small-ordered-commits` rule).
 - **Toolchain conformance.** The repo's existing build, test and lint tooling is used and left passing; the defaults under Given apply only where the repo is silent.
 - **Stack norms.** The stack norms named under Given hold in every changed file.
 
@@ -47,6 +49,7 @@ The output is correct when a reader who never saw the work can confirm, from the
 - **Every acceptance criterion maps to a test or an explicit, justified gap**: failing looks like a criterion with no evidence.
 - **The summary names the branch, the verification command and how to run the result**: failing looks like a summary that says 'done' and nothing else.
 - **The diff touches only files inside the unit's boundary**: failing looks like edits in another developer's files.
+- **Each test was seen failing first**: failing looks like a verification section with only green runs.
 - **The verification command is the repo's own, or a default the summary justifies**: failing looks like a test command nobody in the repo uses.
 
 ## Guardrails: must not

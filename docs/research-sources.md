@@ -82,6 +82,7 @@ Every process under `plugins/*/processes/` and every rule that came from researc
 | S-068 | CAN-SPAM Act compliance guide for business | FTC | primary | page | eight requirements; no B2B exception | https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business |
 | S-069 | SWOT analysis guides (bank and vendor pages) | various | secondary | search | internal versus external, 2x2, pairing factors, subjectivity, refresh; no single authoritative page | https://www.rbcroyalbank.com/business/pdf/Swot%20template.pdf |
 | S-070 | 10/20/30 rule and the ten slides | Guy Kawasaki, through secondary pages | secondary | search | ten slides, twenty minutes, 30-point font; Kawasaki's own page returned 403 | https://astro.visible.vc/blog/guy-kawasaki-pitch-deck |
+| S-071 | ub-mode skill and the crapper, dryer and mutator tools it relies on | Uncle Bob's skill and tools | secondary | partial | CRAP = CC^2(1-cov)^3+CC, structural duplication, mutation score, TDD and small-commit habits; reached through a short link, the repo URLs were not kept, so the tools' exact defaults are unconfirmed | https://lnkd.in/dfJ7xq5d |
 
 ## Tried and not read
 

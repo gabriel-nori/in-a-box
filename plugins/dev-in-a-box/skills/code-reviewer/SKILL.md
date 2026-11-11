@@ -28,6 +28,7 @@ Nothing is withheld from this role; it needs the change, its description and the
 See [`docs/skill-dependencies.md`](../../../../docs/skill-dependencies.md) (CONVENTIONS section 3).
 - **Requires:** none.
 - **Optional (ordered):** `developer` (`implementation-summary`): a review of a change that is still moving judges code that will not ship; if a developer node is active it runs first.
+- **Optional (ordered):** `quality-gate` (`quality-report`): a review that ignores measured complexity, coverage and duplication argues from taste; if a quality-gate node is active it runs first.
 - **Optional (enriching):** `tech-lead` (`interface-contracts`): the contracts the change must honour; read it if present, never wait.
 - **Optional (enriching):** `security-reviewer` (`threat-notes`): known risks to check the change against; read it if present, never wait.
 - **Optional (enriching):** `dba` (`query-review`): optimisation findings on the queries and migrations in the change; read it if present, never wait.

@@ -54,6 +54,10 @@
       "file": "skills/developer-sql/SKILL.md"
     },
     {
+      "name": "quality-gate",
+      "file": "skills/quality-gate/SKILL.md"
+    },
+    {
       "name": "spec-analyst",
       "file": "skills/spec-analyst/SKILL.md"
     },
@@ -70,6 +74,41 @@
       "non_negotiable": false,
       "id": "code-review",
       "file": "rules/code-review.md"
+    },
+    {
+      "id": "tdd-evidence",
+      "title": "Test first, seen failing",
+      "file": "rules/tdd-evidence.md",
+      "scenario": "A developer is about to write code for an acceptance criterion",
+      "non_negotiable": false
+    },
+    {
+      "id": "design-principles",
+      "title": "Test the premise, then prefer the smaller change",
+      "file": "rules/design-principles.md",
+      "scenario": "A developer or tech lead is about to start or slice a unit of work",
+      "non_negotiable": false
+    },
+    {
+      "id": "small-ordered-commits",
+      "title": "Small ordered commits that carry why, what and proof",
+      "file": "rules/small-ordered-commits.md",
+      "scenario": "A developer is about to commit a change",
+      "non_negotiable": false
+    },
+    {
+      "id": "worktree-cleanup",
+      "title": "Look before removing a worktree",
+      "file": "rules/worktree-cleanup.md",
+      "scenario": "Worktrees or branches are about to be cleaned up",
+      "non_negotiable": true
+    },
+    {
+      "id": "quality-limits",
+      "title": "Measured quality limits; unmeasured is not passed",
+      "file": "rules/quality-limits.md",
+      "scenario": "A change is about to be judged for complexity, coverage or duplication",
+      "non_negotiable": false
     }
   ]
 }

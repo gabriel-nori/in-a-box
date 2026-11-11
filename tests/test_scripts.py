@@ -18,6 +18,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 JOBKIT = ROOT / "plugins/jobsearch-in-a-box/scripts/jobkit.py"
 RENDER = ROOT / "plugins/designer-in-a-box/scripts/render-art.py"
 GENERATE = ROOT / "plugins/designer-in-a-box/scripts/generate-image.py"
+GATE = ROOT / "plugins/dev-in-a-box/scripts/qualitygate.py"
 EXAMPLE_SPEC = ROOT / "plugins/designer-in-a-box/examples/art-spec.json"
 
 
@@ -377,6 +378,79 @@ class GenerateImageTest(TempDirCase):
         self.assertEqual(assets, [{"slot": "hero", "file": "hero.png", "provider": "tester", "request_hash": digest}])
         resolved = json.loads((self.tmp / "g/art-spec.resolved.json").read_text())
         self.assertTrue(resolved["slides"][0]["image"]["asset"].endswith("hero.png"))
+
+
+class QualityGateTest(TempDirCase):
+    BRANCHY = ("def f(a, b, c):\n    if a:\n        if b:\n            return 1\n        if c:\n            return 2\n"
+               "    for x in a:\n        if x and b or c:\n            return 3\n    return 0\n")
+    SIMPLE = "def g(a):\n    return a\n"
+
+    def coverage(self, path, executed, missing):
+        return self.write("cov.json", {"files": {str(path): {"executed_lines": executed, "missing_lines": missing}}})
+
+    def test_uncovered_branchy_function_fails_crap(self):
+        src = self.write("m.py", self.BRANCHY)
+        cov = self.coverage(src, [], list(range(1, 11)))
+        out = run(GATE, "crap", "--files", src, "--coverage", cov)
+        self.assertEqual(out.returncode, 2, out.stdout)
+        found = json.loads(out.stdout)["checks"][0]["findings"][0]
+        self.assertEqual(found["function"], "f")
+        self.assertGreater(found["crap"], 10)
+
+    def test_fully_covered_function_passes_crap(self):
+        src = self.write("m.py", self.BRANCHY)
+        cov = self.coverage(src, list(range(1, 11)), [])
+        out = run(GATE, "crap", "--files", src, "--coverage", cov, "--max", 100)
+        self.assertEqual(out.returncode, 0, out.stdout)
+
+    def test_crap_of_an_uncovered_simple_function_is_two(self):
+        src = self.write("m.py", self.SIMPLE)
+        cov = self.coverage(src, [], [1, 2])
+        check = json.loads(run(GATE, "crap", "--files", src, "--coverage", cov).stdout)["checks"][0]
+        self.assertEqual(check["functions"], 1)
+        self.assertEqual(check["status"], "pass")
+        out = run(GATE, "crap", "--files", src, "--coverage", cov, "--max", 1)
+        self.assertEqual(json.loads(out.stdout)["checks"][0]["findings"][0]["crap"], 2.0)
+
+    def test_duplicate_functions_are_flagged(self):
+        a = self.write("a.py", self.BRANCHY)
+        b = self.write("b.py", self.BRANCHY.replace("def f", "def h"))
+        out = run(GATE, "dupes", "--files", a, b, "--min-nodes", 10)
+        self.assertEqual(out.returncode, 2, out.stdout)
+        self.assertGreaterEqual(json.loads(out.stdout)["checks"][0]["findings"][0]["similarity"], 0.8)
+
+    def test_gate_without_reports_is_not_measured_never_pass(self):
+        src = self.write("m.py", self.SIMPLE)
+        out = run(GATE, "gate", "--files", src)
+        self.assertEqual(out.returncode, 3, out.stdout)
+        self.assertEqual(json.loads(out.stdout)["verdict"], "not-measured")
+
+    def test_non_python_file_is_listed_as_not_measured(self):
+        py = self.write("m.py", self.SIMPLE)
+        kt = self.write("A.kt", "fun a() = 1")
+        cov = self.coverage(py, [1, 2], [])
+        out = run(GATE, "gate", "--files", py, kt, "--coverage", cov, "--mutation-score", 0.9)
+        self.assertEqual(out.returncode, 3, out.stdout)
+        self.assertEqual(json.loads(out.stdout)["not_measured_files"][0]["file"], str(kt))
+
+    def test_everything_measured_and_inside_limits_passes(self):
+        py = self.write("m.py", self.SIMPLE)
+        cov = self.coverage(py, [1, 2], [])
+        out = run(GATE, "gate", "--files", py, "--coverage", cov, "--mutation-score", 0.9)
+        self.assertEqual(out.returncode, 0, out.stdout)
+
+    def test_mutation_score_below_floor_fails(self):
+        py = self.write("m.py", self.SIMPLE)
+        cov = self.coverage(py, [1, 2], [])
+        out = run(GATE, "gate", "--files", py, "--coverage", cov, "--mutation-score", 0.5)
+        self.assertEqual(out.returncode, 2, out.stdout)
+
+    def test_config_overrides_default_limit(self):
+        py = self.write("m.py", self.SIMPLE)
+        cov = self.coverage(py, [1, 2], [])
+        cfg = self.write("q.json", {"mutation_min": 0.95})
+        out = run(GATE, "gate", "--files", py, "--coverage", cov, "--mutation-score", 0.9, "--config", cfg)
+        self.assertEqual(out.returncode, 2, out.stdout)
 
 
 if __name__ == "__main__":

@@ -23,7 +23,7 @@ Root of the brain import. Read this first, then each plugin's `.brain/MAP.md`.
 | `curator-in-a-box` | 1 | `integration-report` |
 | `dba-in-a-box` | 4 | `query-review` |
 | `designer-in-a-box` | 5 | `art-spec`, `design-review`, `design-rules`, `image-assets`, `post-art` |
-| `dev-in-a-box` | 15 | `implementation-summary`, `interface-contracts`, `review-report`, `technical-spec`, `test-plan`, `work-plan` |
+| `dev-in-a-box` | 16 | `implementation-summary`, `interface-contracts`, `quality-report`, `review-report`, `technical-spec`, `test-plan`, `work-plan` |
 | `disaster-recovery-in-a-box` | 3 | `continuity-compliance`, `dr-plan`, `dr-test-report` |
 | `docs-in-a-box` | 2 | `changelog`, `documentation` |
 | `finops-in-a-box` | 3 | `budget-plan`, `cost-estimate`, `cost-findings` |
@@ -50,8 +50,8 @@ Root of the brain import. Read this first, then each plugin's `.brain/MAP.md`.
 1. `carousel-writer`, `code-reviewer-sql`, `job-scout`, `post-writer`, `posting-analyst`, `postmortem-author`, `run-flow`, `skill-integrator`, `spec-analyst`
 2. `code-reviewer-android`, `code-reviewer-java`, `code-reviewer-python`, `code-reviewer-react`, `cover-letter-writer`, `cv-tailor`, `post-designer`, `tech-lead`
 3. `application-mailer`, `ats-checker`, `developer`, `developer-android`, `developer-java`, `developer-python`, `developer-react`, `developer-sql`, `image-generator`
-4. `art-renderer`, `code-reviewer`, `qa-tester`, `security-reviewer`
-5. `acceptance-reviewer`, `design-reviewer`
+4. `art-renderer`, `qa-tester`, `quality-gate`, `security-reviewer`
+5. `acceptance-reviewer`, `code-reviewer`, `design-reviewer`
 6. `changelog-keeper`, `documenter`, `release-manager`
 
 ## Edges across plugins

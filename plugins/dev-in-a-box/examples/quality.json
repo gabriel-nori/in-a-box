@@ -1,0 +1,6 @@
+{
+  "crap_max": 10,
+  "dup_max": 0.8,
+  "dup_min_nodes": 30,
+  "mutation_min": 0.8
+}

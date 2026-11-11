@@ -272,8 +272,10 @@ Mirror of every `Depends on` section (CONVENTIONS section 3). `scripts/check-con
 | `dba-sqlserver` | optional-enriching | `developer` | `implementation-summary` |
 | `dba-sqlserver` | optional-enriching | `observability-reader` | `observability-findings` |
 | `dba-sqlserver` | optional-enriching | `infra-engineer` | `environment-notes` |
+| `quality-gate` | requires | `developer` | `implementation-summary` |
 | `code-reviewer` | requires | `none` |  |
 | `code-reviewer` | optional-ordered | `developer` | `implementation-summary` |
+| `code-reviewer` | optional-ordered | `quality-gate` | `quality-report` |
 | `code-reviewer` | optional-enriching | `tech-lead` | `interface-contracts` |
 | `code-reviewer` | optional-enriching | `security-reviewer` | `threat-notes` |
 | `code-reviewer` | optional-enriching | `dba` | `query-review` |
